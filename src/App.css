@@ -1,0 +1,50 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  text-align: center;
+}
+
+.App-header h1 {}
+
+.App-main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.App-main h3 {}
+
+
+.App-main-rules {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 60%;
+}
+
+
+.App-main-rules h4 {}
+
+
+.App-main-div-create-session {
+  width: 100%;
+  text-align: center;
+}
+
+.App-main-div-create-session .button-play {
+  background: linear-gradient(180deg, rgba(193, 0, 0, 1) 0%, rgba(205, 207, 17, 1) 100%);
+  width: 30%;
+  height: 55px;
+  margin-top: 30px;
+  border: 0;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}

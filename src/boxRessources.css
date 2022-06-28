@@ -1,0 +1,22 @@
+.quizz-box-ressources {
+    margin-top: 50px;
+    background: white;
+    width: 29%;
+    padding: 0 15px 15px 15px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.quizz-box-ressources h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.box-ressources-links {}
+
+.box-ressources-links a {
+    padding-left: 5px;
+}
