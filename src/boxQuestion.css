@@ -3,23 +3,57 @@
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
-    padding-top: 10%;
+    padding-top: 5%;
 }
 
 .quizz-box-question {
-    width: 35%;
+    width: 38%;
+    height: 450px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    justify-content: flex-end;
 }
 
 .box-question-counter-question {
     display: flex;
     flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.box-question-counter-question p {
-    width: 40%;
+.timer {
+    display: flex;
+    align-items: center;
+}
+
+.timer h3 {
+    background: rgba(255, 255, 255, 0.7);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    padding: 10px;
+    margin: 0;
+}
+
+.cpt-satoshis {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cpt-satoshis p {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.cpt-satoshis i:before {
+    font-size: 30px;
 }
 
 .box-question-question {
@@ -29,7 +63,10 @@
 }
 
 .box-question-question h4 {
-    background-color: white;
+    background: rgba(255, 255, 255, 0.5);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
     width: 70%;
     text-align: center;
     border-radius: 10px;
@@ -37,6 +74,8 @@
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+    padding: 30px;
+    box-shadow: var(--box-shadow);
 }
 
 .box-question-answers {
@@ -47,6 +86,10 @@
 }
 
 .box-question-answers button {
+    background: rgba(255, 255, 255, 0.5);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
     width: 42%;
     height: 70px;
     border-radius: 10px;
@@ -55,13 +98,19 @@
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     border: 0;
-    margin-bottom: 20px;
+    margin-bottom: 27px;
 }
 
 
 .box-question-button-next {
+    text-align: end;
+}
+
+
+.box-question-result p {
     text-align: center;
 }
+
 
 .box-question-button-next button {
     background: linear-gradient(180deg, rgba(193, 0, 0, 1) 0%, rgba(205, 207, 17, 1) 100%);
@@ -74,9 +123,5 @@
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
-}
-
-
-.box-question-result p {
-    text-align: center;
+    box-shadow: var(--box-shadow);
 }

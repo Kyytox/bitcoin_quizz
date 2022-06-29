@@ -13,7 +13,11 @@ function ResultQuestion(props) {
             <div className='quizz-box-question'>
                 <div className="box-question-counter-question">
                     <p>Question {props.counterQuestion}</p>
-                    <p> {props.counterScore} Réponse correctes</p>
+                    {/* <p> {props.counterScore} Réponse correctes</p> */}
+                    <div className='cpt-satoshis'>
+                        <i class="fa-brands fa-bitcoin"></i>
+                        <p>{props.satoshis} satoshis</p>
+                    </div>
                 </div>
 
                 <div className="box-question-question">
@@ -29,7 +33,7 @@ function ResultQuestion(props) {
                 </div>
 
                 <div className="box-question-button-next">
-                    <button onClick={newQuestion}>Next</button>
+                    <button onClick={newQuestion}>Question suivante <i class="fa-solid fa-arrow-right"></i></button>
                 </div>
             </div >
             <BoxRessources ressources={props.ressources} />

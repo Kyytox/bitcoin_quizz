@@ -1,20 +1,28 @@
 
 import './boxQuestion.css';
+import Timer from './timer';
 
 
 function BoxQuestion(props) {
 
     // it's props contain function changeReponseUser
     const { reponseUser } = props
-    const { verifResult } = props
-    const { renderResult } = props
+    // const { verifResult } = props
 
     return (
         <div className='quizz-box-question'>
             <div className="box-question-counter-question">
                 <p>Question {props.counterQuestion}</p>
-                <p> {props.counterScore} Réponse correctes </p>
 
+                <Timer
+                    timer={props.timer}
+                    verifResult={props.verifResult}
+                />
+
+                <div className='cpt-satoshis'>
+                    <i class="fa-brands fa-bitcoin"></i>
+                    <p>{props.satoshis} satoshis</p>
+                </div>
             </div>
 
             <div className="box-question-question">
@@ -30,7 +38,7 @@ function BoxQuestion(props) {
 
             <div className="box-question-button-next">
                 {/* call multiple method in onClick  */}
-                <button className='button-play' onClick={() => { verifResult(); renderResult(); }}>Next</button>
+                {/* <button onClick={() => { verifResult(); renderResult(); }}>Next</button> */}
             </div>
         </div >
     );

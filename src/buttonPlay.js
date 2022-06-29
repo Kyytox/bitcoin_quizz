@@ -6,7 +6,7 @@ function ButtonPlay() {
     return (
         <div className='App-main-div-create-session' >
             <NavLink to="/quizz">
-                <button className='button-play' onClick> Play</button>
+                <button className='button-play'> Play</button>
             </NavLink>
         </div >
     );

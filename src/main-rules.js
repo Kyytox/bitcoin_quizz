@@ -8,7 +8,7 @@ function Rules() {
             <div className='App-main-rules'>
                 <h4>100 Questions</h4>
                 <h4>3 vies</h4>
-                <h4>2 Satochis par bonne réponse</h4>
+                <h4>3 Satochis par bonne réponse</h4>
             </div>
             <ButtonPlay />
         </div>
