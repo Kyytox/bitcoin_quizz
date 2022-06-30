@@ -35,11 +35,6 @@ function BoxQuestion(props) {
                 <button id='button-answers' onClick={((e) => reponseUser(e, props.answers[2]))}>{props.answers[2]}</button>
                 <button id='button-answers' onClick={((e) => reponseUser(e, props.answers[3]))}>{props.answers[3]}</button>
             </div>
-
-            <div className="box-question-button-next">
-                {/* call multiple method in onClick  */}
-                {/* <button onClick={() => { verifResult(); renderResult(); }}>Next</button> */}
-            </div>
         </div >
     );
 }

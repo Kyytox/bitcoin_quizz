@@ -1,9 +1,9 @@
 .quizz-box-ressources {
     margin-top: 50px;
     background: rgba(255, 255, 255, 0.5);
+    /* background: var(--background-1); */
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
-    border: 1px solid rgba(255, 255, 255, 0.25);
     width: 29%;
     padding: 0 15px 15px 15px;
     border-radius: 15px;
@@ -17,10 +17,22 @@
 .quizz-box-ressources h3 {
     margin-top: 10px;
     margin-bottom: 10px;
+    color: black;
 }
 
 .box-ressources-links {}
 
 .box-ressources-links a {
     padding-left: 5px;
+}
+
+
+
+
+/* Tablette and phone */
+@media (max-width: 730px) {
+
+    .quizz-box-ressources {
+        width: 80%;
+    }
 }

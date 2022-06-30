@@ -20,7 +20,7 @@ class Quizz extends React.Component {
             displayResult: false,
             resultQuizz: false,
             satoshis: 0,
-            timer: 15,
+            timer: 10,
             newQuestion: {
                 id: Questions[randomNb].id,
                 question: Questions[randomNb].question,
@@ -43,7 +43,7 @@ class Quizz extends React.Component {
         // collect all btn answers for put her backgroundColor = white 
         const listBtn = document.querySelectorAll("#button-answers")
         for (let i = 0; i < listBtn.length; i++) {
-            listBtn[i].style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+            listBtn[i].style.background = "linear-gradient(0deg, rgba(172, 0, 0, 1) 0%, rgba(197, 199, 18, 1) 100%)";
             listBtn[i].style.backdropFilter = "blur(8px)";
         }
     }
@@ -183,6 +183,7 @@ class Quizz extends React.Component {
             />
         );
     }
+
 
     render() {
         return (

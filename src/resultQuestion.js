@@ -13,7 +13,6 @@ function ResultQuestion(props) {
             <div className='quizz-box-question'>
                 <div className="box-question-counter-question">
                     <p>Question {props.counterQuestion}</p>
-                    {/* <p> {props.counterScore} Réponse correctes</p> */}
                     <div className='cpt-satoshis'>
                         <i class="fa-brands fa-bitcoin"></i>
                         <p>{props.satoshis} satoshis</p>
@@ -29,7 +28,7 @@ function ResultQuestion(props) {
                 </div>
 
                 <div className="box-question-result">
-                    {props.result ? <p>Bonne Réponse</p> : <p>Mauvaise réponse</p>}
+                    {props.result ? <p style={{ color: 'green' }}>Bonne Réponse</p> : <p style={{ color: 'red' }}>Mauvaise réponse</p>}
                 </div>
 
                 <div className="box-question-button-next">

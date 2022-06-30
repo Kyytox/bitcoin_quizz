@@ -15,6 +15,10 @@
     align-items: center;
 }
 
+hr {
+    width: 80%;
+}
+
 
 .btn-claim-satoshis {
     background: linear-gradient(180deg, rgba(193, 0, 0, 1) 0%, rgba(205, 207, 17, 1) 100%);
@@ -28,4 +32,19 @@
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
     box-shadow: var(--box-shadow);
+}
+
+
+
+/* Tablette and phone */
+@media (max-width: 730px) {
+
+    .box-result-quizz {
+        width: 70%;
+    }
+
+
+    .btn-claim-satoshis {
+        width: 70%;
+    }
 }
