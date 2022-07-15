@@ -1,17 +1,18 @@
 .quizz-box-ressources {
-    margin-top: 50px;
+    margin-top: 20px;
     background: rgba(255, 255, 255, 0.5);
-    /* background: var(--background-1); */
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
-    width: 29%;
+    width: 70%;
     padding: 0 15px 15px 15px;
+    margin-left: 15%;
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
     box-shadow: var(--box-shadow);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .quizz-box-ressources h3 {
@@ -20,10 +21,14 @@
     color: black;
 }
 
-.box-ressources-links {}
+.box-ressources-links {
+    display: flex;
+    flex-direction: column;
+}
 
 .box-ressources-links a {
     padding-left: 5px;
+    color: black;
 }
 
 

@@ -1,9 +1,38 @@
 :root {
   --box-shadow: 2px 3px 13px 0px #000000;
-  --background-1: linear-gradient(0deg, rgba(172, 0, 0, 1) 0%, rgba(197, 199, 18, 1) 100%);
+  --box-shadow-hover: 2px 3px 13px 0px #c9c6c6;
+  /* --background-1: linear-gradient(0deg, rgba(172, 0, 0, 0.8) 0%, rgba(197, 199, 18, 0.8) 100%); */
+  --background-1: rgb(201 201 201);
+  --background-btn-hover: rgb(43, 43, 43);
+  --colo-btn-question: rgb(201 201 201);
+  --color-text: black;
+  --color-text-hover: white;
+  /* background: linear-gradient(0deg, rgba(172, 0, 0, 1) 0%, rgba(197, 199, 18, 1) 100%); */
 }
 
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
 
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+div#root {
+  height: 95vh;
+}
 
 .App {
   text-align: center;
@@ -14,7 +43,7 @@
 }
 
 .App-header h1 {
-  font-size: 45px;
+  font-size: 70px;
 }
 
 .App-main {
@@ -35,27 +64,62 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  width: 50%;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  width: 80%;
+  margin-top: 40px;
+  margin-bottom: 60px;
 }
 
+
+.main-rules-list {
+  animation: fadein 2s;
+  -webkit-animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -ms-animation: fadein 2s;
+  -o-animation: fadein 2s;
+}
+
+
+.main-rules-questions {
+  animation: fadein 4s;
+  -webkit-animation: fadein 4s;
+  -moz-animation: fadein 4s;
+  -ms-animation: fadein 4s;
+  -o-animation: fadein 4s;
+}
+
+
+.main-rules-satoshis {
+  animation: fadein 6s;
+  -webkit-animation: fadein 6s;
+  -moz-animation: fadein 6s;
+  -ms-animation: fadein 6s;
+  -o-animation: fadein 6s;
+}
+
+.main-rules-list,
 .main-rules-questions,
-.main-rules-life,
 .main-rules-satoshis {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 30%;
+  width: 33%;
 }
 
-.main-rules-questions i::before {
-  color: rgb(216, 4, 4);
+
+.App-main-box-wallet a {
+  text-decoration: none;
+  color: white;
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+
+.main-rules-list i::before {
+  color: green;
   font-size: 50px;
 }
 
-.main-rules-life i::before {
-  color: rgb(2, 124, 2);
+.main-rules-questions i::before {
+  color: rgb(255 255 255);
   font-size: 50px;
 }
 
@@ -66,37 +130,240 @@
 }
 
 
-
-
 .App-main-rules h4 {
-  font-size: 18px;
+  font-size: 23px;
+  color: white;
 }
 
 
+.App-main-box-wallet {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
 
-
-
-
-
-
-
+.App-main-div-add-question {
+  text-align: center;
+  width: 33%;
+}
 
 .App-main-div-create-session {
-  width: 100%;
+  width: 33%;
   text-align: center;
+  margin-bottom: 15px;
 }
 
-.App-main-div-create-session .button-play {
-  background: var(--background-1);
-  width: 18%;
-  height: 55px;
-  margin-top: 30px;
+.div-envoi-satoshis {
+  text-align: center;
+  width: 33%;
+}
+
+
+.App-main-div-add-question .button-add-question {
+  background: var(--colo-btn-question);
+  width: 50%;
+  height: 60px;
+  margin-top: 40px;
   border: 0;
-  font-size: 24px;
+  font-size: 27px;
   border-radius: 30px;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
   box-shadow: var(--box-shadow);
+  color: var(--color-text);
+}
+
+.App-main-div-add-question button:hover {
+  background: var(--background-btn-hover);
+  box-shadow: var(--box-shadow-hover);
+  color: var(--color-text-hover);
+}
+
+
+.App-main-div-create-session .button-play {
+  background: var(--colo-btn-question);
+  width: 42%;
+  height: 90px;
+  border: 0;
+  font-size: 55px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  box-shadow: var(--box-shadow);
+  color: var(--color-text);
+  font-family: 'Slater Industrial Regular';
+}
+
+.App-main-div-create-session .button-play:hover {
+  background: var(--background-btn-hover);
+  box-shadow: var(--box-shadow-hover);
+  color: var(--color-text-hover);
+}
+
+
+form {
+  margin-top: 20px;
+}
+
+
+.from-btn-input {
+  background: var(--background-1);
+  width: 20%;
+  height: 35px;
+  border: 0;
+  font-size: 15px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  box-shadow: var(--box-shadow);
+  color: var(--color-text);
+  font-family: 'Slater Industrial Regular';
+}
+
+.from-btn-input:hover {
+  background: var(--background-btn-hover);
+  box-shadow: var(--box-shadow-hover);
+  color: var(--color-text-hover);
+}
+
+
+.App-main-box-wallet-details p {
+  margin-bottom: 5px;
+}
+
+
+
+.form-input-amount {
+  border-radius: 7px;
+  margin-left: 3px;
+  margin-right: 5px;
+  text-align: center;
+  width: 20%;
+  height: 22px;
+}
+
+
+.div-envoi-satoshis p {
+  word-wrap: break-word;
+  font-size: 20px;
+}
+
+#p-LNURL {
+  display: none;
+}
+
+
+.qr-code-envoi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.qr-code-envoi button {
+  background: var(--background-1);
+  width: 20%;
+  height: 25px;
+  margin-bottom: 15px;
+  border: 0;
+  font-size: 15px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  box-shadow: var(--box-shadow);
+  color: var(--color-text);
+}
+
+.qr-code-envoi button:hover {
+  background: var(--background-btn-hover);
+  box-shadow: var(--box-shadow-hover);
+  color: var(--color-text-hover);
+}
+
+
+svg {
+  padding: 10px;
+  background: white;
+}
+
+
+#loader-qr-code {
+  color: #000;
+  margin-top: 60px;
+  margin-bottom: 15px;
+  font-size: 12px;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  text-indent: -9999em;
+  animation: mulShdSpin 1.3s infinite linear;
+  transform: translateZ(0);
+}
+
+@keyframes mulShdSpin {
+
+  0%,
+  100% {
+    box-shadow: 0 -3em 0 0.2em,
+      2em -2em 0 0em, 3em 0 0 -1em,
+      2em 2em 0 -1em, 0 3em 0 -1em,
+      -2em 2em 0 -1em, -3em 0 0 -1em,
+      -2em -2em 0 0;
+  }
+
+  12.5% {
+    box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em,
+      3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em,
+      -2em 2em 0 -1em, -3em 0 0 -1em,
+      -2em -2em 0 -1em;
+  }
+
+  25% {
+    box-shadow: 0 -3em 0 -0.5em,
+      2em -2em 0 0, 3em 0 0 0.2em,
+      2em 2em 0 0, 0 3em 0 -1em,
+      -2em 2em 0 -1em, -3em 0 0 -1em,
+      -2em -2em 0 -1em;
+  }
+
+  37.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+      3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em,
+      -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+
+  50% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+      3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em,
+      -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+
+  62.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+      3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0,
+      -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+  }
+
+  75% {
+    box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em,
+      3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em,
+      -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+  }
+
+  87.5% {
+    box-shadow: 0em -3em 0 0, 2em -2em 0 -1em,
+      3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em,
+      -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+  }
 }
