@@ -38,6 +38,7 @@
 @media (max-width: 730px) {
 
     .quizz-box-ressources {
-        width: 80%;
+        width: 92%;
+        margin-left: 0;
     }
 }

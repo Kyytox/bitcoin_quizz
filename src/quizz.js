@@ -219,6 +219,9 @@ class Quizz extends React.Component {
     displayClaim() {
         this.withdraw();
 
+        const hide = document.getElementById("btn-claim")
+        hide.style.display = "none";
+
         // collect loader and diplay it  
         const loader = document.getElementById("loader-qr-code")
         loader.style.display = "inline-block";

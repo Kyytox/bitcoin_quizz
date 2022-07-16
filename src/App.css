@@ -367,3 +367,58 @@ svg {
       -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
   }
 }
+
+
+
+/* Tablette and phone */
+@media (max-width: 730px) {
+  .App-main-rules {
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+
+  .main-rules-list,
+  .main-rules-questions,
+  .main-rules-satoshis {
+    width: 100%;
+  }
+
+
+  .App-main-div-create-session .button-play {
+    width: 66%;
+  }
+
+  .App-main-div-create-session {
+    width: 100%;
+  }
+
+  .div-envoi-satoshis {
+    width: 95%;
+  }
+
+  .div-envoi-satoshis p {
+    margin-bottom: 10px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-input-amount {
+    width: 30%;
+  }
+
+  .from-btn-input {
+    margin-top: 15px;
+    width: 50%;
+  }
+
+  .qr-code-envoi button:hover {
+    height: 50px;
+  }
+}

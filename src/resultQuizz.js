@@ -57,7 +57,7 @@ function ResultQuizz(props) {
                             </NavLink>
                         ) : (
                             <>
-                                <button className='btn-claim-satoshis' onClick={fctDisplayClaim}>Claim</button>
+                                <button id='btn-claim' className='btn-claim-satoshis' onClick={fctDisplayClaim}>Claim</button>
                                 <span id="loader-qr-code" style={{ display: 'none' }}></span>
                             </>
                         )}

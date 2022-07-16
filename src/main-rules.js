@@ -29,9 +29,14 @@ function Rules() {
     const handleSubmit = event => {
         event.preventDefault();
 
+        const hide = document.getElementById("form-envoi")
+        hide.style.display = "none";
+
         // collect loader and diplay it  
         const loader = document.getElementById("loader-qr-code")
         loader.style.display = "inline-block";
+
+
 
         createInvoce();
     }
@@ -76,7 +81,7 @@ function Rules() {
             <div className='App-main-box-wallet'>
                 {/* <ButtonAddQuestion /> */}
                 <ButtonPlay />
-                <a href="" target="_blank" rel="noopener noreferrer">Proposer une question</a>
+                <a href="https://twitter.com/Kytox_/status/1546965980038971392" target="_blank" rel="noopener noreferrer">Proposer une question</a>
                 <div className='div-envoi-satoshis'>
                     {displayInvoce ? (
                         <div className='qr-code-envoi'>
@@ -98,7 +103,7 @@ function Rules() {
                                 <p>Envoyer des satoshis au wallet Bitcoin Quizz</p>
                                 <span>Balance : {walletBalance}</span>
                             </div>
-                            <form onSubmit={handleSubmit}>
+                            <form onSubmit={handleSubmit} id='form-envoi'>
                                 <label>Entrer un montant:
                                     <input
                                         className='form-input-amount'
