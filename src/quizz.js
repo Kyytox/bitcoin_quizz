@@ -10,8 +10,8 @@ window.Buffer = window.Buffer || require("buffer").Buffer;
 var randomNb = Math.floor(Math.random() * Questions.length);
 
 const { withdraw } = LNBits({
-    adminKey: 'fb510410903d43ed8908880f829e5fdf',
-    invoiceReadKey: '364aa256f08243e1b34800ea5906ca31',
+    adminKey: 'xxxxx',
+    invoiceReadKey: 'xxxxxx',
     endpoint: 'https://www.lnbits.com', //default
 });
 

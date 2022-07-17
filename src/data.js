@@ -591,6 +591,127 @@ export const Questions = [
         correct: "La puissance de calcul par seconde",
         ressources: ["https://cryptonaute.fr/quest-ce-que-le-hashrate-en-cryptomonnaie/", "Cryptonaute - Qu’est-ce que le hashrate en cryptomonnaie ?"]
     }
+    ,
+    {
+        id: 69,
+        question: "Qu'est-ce qu'un BIP ?",
+        answers: ["une proposition d'amelioration de Bitcoin", "Un protocole Bitcoin", "Une crypto", "Un Wallet"],
+        correct: "une proposition d'amelioration de Bitcoin",
+        ressources: ["https://cryptoast.fr/bip-bitcoin-improvement-proposal/", "Cryptoast - Qu'est-ce qu'un BIP ?"]
+    }
+    ,
+    {
+        id: 70,
+        question: "Par quelle methode on peut partager l'acces a un wallet entre plusieurs personnes de maniere securisee ?",
+        answers: ["En partageant sa cle privee", "En partageant sa cle public", "Grace au multi-sig"],
+        correct: "Grace au multi-sig",
+        ressources: ["https://academy.binance.com/fr/articles/what-is-a-multisig-wallet", "Binance Academy - Qu'est-ce qu'un Portefeuille Multisig?",
+            "https://www.youtube.com/watch?v=mb6R2POi3vQ", "Hasheur - Portefeuille crypto multi-signature (Multisig) | Tutoriel, comment ça marche ?"]
+    }
+    ,
+    {
+        id: 71,
+        question: "Combien de bitcoins sont mines en ce moment dans chaque bloc ?",
+        answers: ["3.125", "6,25", "10", "12.5"],
+        correct: "6,25",
+        ressources: ["https://bitcoin.fr/evolution-du-nombre-de-bitcoins-a-travers-le-temps/", "Bitcoin.fr - Evolution du nombre de bitcoins à travers le temps"]
+    }
+    ,
+    {
+        id: 72,
+        question: "En quelle annee interviendra le prochain halving ?",
+        answers: ["2024", "2025", "2026", "2028"],
+        correct: "2024",
+        ressources: ["https://www.cointribune.com/guides-crypto/bien-debuter/bitcoin-btc-quest-ce-que-le-halving/", "Cointribune.com - Le halving",
+            "https://www.youtube.com/watch?v=gl6JIA8zt90", "Decouvre Bitcoin - Bitcoin Q&A N°22 : Pourquoi un Halving tous les 4 ans ?",
+            "https://academy.binance.com/fr/halving", "Binance.com - Halving"]
+    }
+    ,
+    {
+        id: 73,
+        question: "Combien de mots differents contient le dictionnaire utilise pour generer les seeds ?",
+        answers: ["1024", "2048", "4096", "10 000"],
+        correct: "2048",
+        ressources: ["https://journalducoin.com/actualites/phrases-mnemoniques/", "Journal du coin - Comment fonctionnent les Seeds ?"]
+    }
+    ,
+    {
+        id: 74,
+        question: "Quel nom a ete donne a la mise a jour du protocole Bitcoin qui a introduit les signatures de Schnorr ?",
+        answers: ["Liquid", "SegWit", "Lightning Network", "Taproot"],
+        correct: "Taproot",
+        ressources: ["https://bitcoin.fr/activation-de-taproot/", "Bitcoin.fr - Activation de Taproot",
+            "https://cryptoast.fr/mise-a-niveau-taproot-bitcoin-btc-activee/", "Cryptoast - La mise à niveau Taproot de Bitcoin"]
+    }
+    ,
+    {
+        id: 75,
+        question: "Quelle est l'atout principal du consensus Proof-of-Work de Bitcoin ?",
+        answers: ["La scalabilite du reseau", "La securite du reseau", "Des frais de transaction faible", "Le controle du reseau"],
+        correct: "La securite du reseau",
+        ressources: ["https://journalducoin.com/lexique/proof-of-work/", "Journal du Coin - Proof-of-work : definition et explication",
+            "https://www.youtube.com/watch?v=0uYJQpuNxDs&t=590s", "Cryptoast - Qu’est-ce que le minage de crypto-monnaies ?"]
+    }
+    ,
+    {
+        id: 76,
+        question: "A partir de quel cout d'electricite il devient rentable de miner des bitcoins ?",
+        answers: ["1 € / kWh", "0,06 € / kWh", "0,04 € / kWh", "0,1 € / kWh"],
+        correct: "0,06 € / kWh",
+        ressources: []
+    }
+    ,
+    {
+        id: 77,
+        question: "Combien de transactions contient generalement un bloc plein ?",
+        answers: ["1000-2000", "2000-3000", "5000", "10 000"],
+        correct: "2000-3000",
+        ressources: ["https://academy.bit2me.com/fr/que-es-escalabilidad-de-bitcoin/", "Bit2me Academy - Qu'est-ce que l'evolutivite Bitcoin?"]
+    }
+    ,
+    {
+        id: 78,
+        question: "Est-ce qu'une meme transaction on-chain peut être utilisee pour payer plusieurs destinataires ?",
+        answers: ["Oui", "Non"],
+        correct: "Oui",
+        ressources: ["https://thecrypto.app/fr/knowledge/how-bitcoin-transactions-work/#One_Input_8211_Multiple_Outputs", "The crypto App - Comment fonctionnent les transactions Bitcoin ?"]
+    }
+    ,
+    {
+        id: 79,
+        question: "Combien de temps met generalement un nœud pour synchroniser l'integralite de la blockchain Bitcoin ?",
+        answers: ["1 heure", "1 jour", "2-3 jours", "8-10 jours"],
+        correct: "2-3 jours",
+        ressources: ["https://decouvrebitcoin.com/thematique/noeud/", "Decouvre Bitcoin - Les Noeuds"]
+    }
+    ,
+    {
+        id: 80,
+        question: "En moyenne, combien de transactions par seconde est-il possible de realiser sur Bitcoin ?",
+        answers: ["Environ 3 par seconde", "Environ 7", "Environ 100", "Environ 1000"],
+        correct: "Environ 7",
+        ressources: ["https://academy.bit2me.com/fr/que-es-escalabilidad-de-bitcoin/", "Bit2me Academy - Qu'est-ce que l'evolutivite Bitcoin?"]
+    }
+    ,
+    {
+        id: 81,
+        question: "Combien coute generalement une transaction Lighting ?",
+        answers: ["1000 satoshis", "1 Bitcoin", "Quelques satoshis"],
+        correct: "Quelques satoshis",
+        ressources: ["https://cryptoast.fr/qu-est-ce-que-lightning-network/", "Cryptoast - Qu'est ce que Lightning Network",
+            "https://decouvrebitcoin.com/le-parcours-bitcoin/chapitre-5-introduction-au-lightning-network/", "Decouvre Bitcoin - Lightning Network",
+            "https://www.youtube.com/watch?v=XZc9sQH3VWY&t=2928s", "Decouvre Bitcoin - Comprendre le Lightning Network ! (Crash course complet)"]
+    }
+    ,
+    {
+        id: 82,
+        question: "Dois-je envoyer une piece d'identite pour ouvrir un wallet Lightning ?",
+        answers: ["Oui", "Non"],
+        correct: "Non",
+        ressources: ["https://cryptoast.fr/qu-est-ce-que-lightning-network/", "Cryptoast - Qu'est ce que Lightning Network",
+            "https://decouvrebitcoin.com/le-parcours-bitcoin/chapitre-5-introduction-au-lightning-network/", "Decouvre Bitcoin - Lightning Network",
+            "https://www.youtube.com/watch?v=XZc9sQH3VWY&t=2928s", "Decouvre Bitcoin - Comprendre le Lightning Network ! (Crash course complet)"]
+    }
     // ,
     // {
     //     id: ,
