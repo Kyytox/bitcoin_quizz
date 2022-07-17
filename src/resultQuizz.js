@@ -38,6 +38,12 @@ function ResultQuizz(props) {
                             <p>Titre: {props.titleLNURL}</p>
                             <p id='p-LNURL'>LNURL: {props.linkLNURL}</p>
                             <button onClick={copyLNURL}>Copy LNUrl</button>
+                            <hr></hr>
+                            <p>Pas de Wallet Lightning ?</p>
+                            <a className='qr-code-infos-link' href="https://www.walletofsatoshi.com/" target="_blank" rel="noopener noreferrer">Wallet Of Satoshi</a>
+                            <a className='qr-code-infos-link' href="https://bluewallet.io/" target="_blank" rel="noopener noreferrer">Blue Wallet</a>
+                            <a className='qr-code-infos-link' href="https://phoenix.acinq.co/" target="_blank" rel="noopener noreferrer">Phoenix</a>
+
                             <NavLink to="/">
                                 <button className='btn-claim-satoshis'>Rejouer</button>
                             </NavLink>

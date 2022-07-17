@@ -39,11 +39,23 @@ div#root {
 }
 
 .App-header {
-  text-align: center;
+  text-align: end;
+}
+
+.App-header a {
+  margin-right: 75px;
+}
+
+.App-header a i {
+  margin-top: 5px;
+  font-size: 30px;
+  color: black;
 }
 
 .App-header h1 {
+  margin-top: 25px;
   font-size: 70px;
+  text-align: center;
 }
 
 .App-main {

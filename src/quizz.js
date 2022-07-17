@@ -65,9 +65,10 @@ class Quizz extends React.Component {
     }
 
     newQuestion() {
-        console.log('Questions', Questions)
+        // console.log('Questions', Questions)
 
         if (this.state.counterQuestion === 2) {
+            randomNb = Math.floor(Math.random() * Questions.length);
             let resultQuizz = true
             // update value question 
             this.setState({
@@ -80,20 +81,15 @@ class Quizz extends React.Component {
             console.log("randomNb", randomNb)
 
             this.state.boolRandomNb = false
-            console.log("boolRandomNb", this.state.boolRandomNb)
 
             while (this.state.boolRandomNb === false) {
-                console.log("boolRandomNb", this.state.boolRandomNb)
                 // Vérifie si la valeur existe dans le tableau
                 if (listRandomNb.indexOf(randomNb) === -1) {
                     listRandomNb.push(randomNb)
                     this.state.boolRandomNb = true
-                    console.log("randomNb", randomNb)
                 } else {
                     randomNb = Math.floor(Math.random() * Questions.length);
-                    console.log("randomNb", randomNb)
                 }
-                console.log("listRandomNb", listRandomNb)
             }
 
 

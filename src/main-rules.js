@@ -23,7 +23,9 @@ function Rules() {
 
     const details = async () => {
         const walletDetails = await wallet.walletDetails();
-        setWalletBalance(walletDetails['balance'])
+        const balanceWalletStr = walletDetails['balance'].toString()
+        const balanceWallet = balanceWalletStr.slice(0, -3)
+        setWalletBalance(balanceWallet)
     };
 
     const handleSubmit = event => {

@@ -65,6 +65,12 @@ hr {
     width: 100%;
 }
 
+a.qr-code-infos-link {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+
 
 .result-quizz-score a {
     text-align: center;

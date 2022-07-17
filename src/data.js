@@ -57,11 +57,11 @@ export const Questions = [
     ,
     {
         id: 6,
-        question: "Qui contrôle bitcoin ?",
+        question: "Qui controle bitcoin ?",
         answers: ["La totalite des membres du reseaux", "Satoshi Nakamoto", "Les USA", "Les developpeurs"],
         correct: "La totalite des membres du reseaux",
-        ressources: ["https://journalducoin.com/bitcoin/qui-controle-bitcoin/", "Journal du coin - Qui contrôle Bitcoin ?",
-            "https://www.youtube.com/watch?v=XtsCqlCpVOQ", "Cryptoast - Podcast #3 - L'histoire du Bitcoin : Qui contrôle le Bitcoin et comment fonctionne-t-il ?",
+        ressources: ["https://journalducoin.com/bitcoin/qui-controle-bitcoin/", "Journal du coin - Qui controle Bitcoin ?",
+            "https://www.youtube.com/watch?v=XtsCqlCpVOQ", "Cryptoast - Podcast #3 - L'histoire du Bitcoin : Qui controle le Bitcoin et comment fonctionne-t-il ?",
             "https://bitcoin.fr/qui-controle-bitcoin/", "Bitcoin.fr - Qui controle Bitcoin ?"]
     }
     ,
@@ -71,7 +71,7 @@ export const Questions = [
         answers: ["Activite qui va sauvegarder l’historique des transactions", "Activite qui polluent", "Ca ne sert a rien", "Activite qui consiste a confirmer les transactions en les incluant dans des blocs en echange de bitcoins"],
         correct: "Activite qui consiste a confirmer les transactions en les incluant dans des blocs en echange de bitcoins",
         ressources: ["https://journalducoin.com/analyses/premiers-mineurs-bitcoin/", "Journal du coin - Les premier mineurs",
-            "https://cryptonymous.fr/quel-role-mineur-bitcoin", "Cryptonymous.fr - Le rôle du mineur",]
+            "https://cryptonymous.fr/quel-role-mineur-bitcoin", "Cryptonymous.fr - Le role du mineur",]
     }
     ,
     {
@@ -355,7 +355,7 @@ export const Questions = [
     ,
     {
         id: 41,
-        question: "Combien coûtent un nœud Bitcoin ?",
+        question: "Combien coutent un nœud Bitcoin ?",
         answers: ["10 000 - 12 000 €", "200 - 300 €", "1000 - 2000 €", "Gratuit"],
         correct: "200 - 300 €",
         ressources: ["https://decouvrebitcoin.fr/thematique/noeud/", "Decouvre Bitcoin - Noeud"]
@@ -372,7 +372,7 @@ export const Questions = [
     ,
     {
         id: 43,
-        question: "Combien y-a-t-il de satoshis dans un Bitcoin ",
+        question: "Combien y-a-t-il de satoshis dans un Bitcoin ?",
         answers: ["100 Mille", "1 Million", "100 Millions", "1 Milliard"],
         correct: "100 Millions",
         ressources: ["https://www.cointribune.com/guides-crypto/bien-debuter/bitcoin-btc-quest-ce-quun-satoshi/", "Cointribune - Qu’est-ce qu’un satoshi ?"]
@@ -380,7 +380,7 @@ export const Questions = [
     ,
     {
         id: 44,
-        question: "Le lighting network permet-il de faire des transactions immediate ",
+        question: "Le lighting network permet-il de faire des transactions immediate ?",
         answers: ["Oui", "Non"],
         correct: "Oui",
         ressources: ["https://decouvrebitcoin.fr/thematique/lightning-network/", "Decouvre Bitcoin - lighting network"]
@@ -388,7 +388,7 @@ export const Questions = [
     ,
     {
         id: 45,
-        question: "Le lighting network permet d'appliquer des frais de transaction ",
+        question: "Le lighting network permet d'appliquer des frais de transaction :",
         answers: ["En fonction du montant de la transaction", "En fonction du poids de la transaction", "Ce sont les mineurs et noeuds qui fixe les frais"],
         correct: "En fonction du montant de la transaction",
         ressources: ["https://decouvrebitcoin.fr/thematique/lightning-network/", "Decouvre Bitcoin - lighting network"]
@@ -396,7 +396,7 @@ export const Questions = [
     ,
     {
         id: 46,
-        question: "Le reseau Bitcoin applique les frais de transaction en fonction",
+        question: "Le reseau Bitcoin applique les frais de transaction en fonction ?",
         answers: ["Du montant de la transaction", "Du poids de la transaction", "Du prix de l'electricite"],
         correct: "En fonction du poids de la transaction",
         ressources: ["https://bitcoin.fr/bitcoin-comprendre-les-frais-de-transaction/", "Bitcoin.fr - Comprendre les frais de transaction",
@@ -405,7 +405,7 @@ export const Questions = [
     ,
     {
         id: 47,
-        question: "Les bitcoins presents sur votre compte dans un Exchange, vous appartiennent-ils",
+        question: "Les bitcoins presents sur votre compte dans un Exchange, vous appartiennent-ils ?",
         answers: ["Oui", "Non"],
         correct: "Non",
         ressources: ["https://www.cointribune.com/analyses/strategie/laisser-ses-btc-sur-les-exchanges-revient-a-shorter-le-bitcoin/", "Cointribune - Laisser ses BTC sur les exchanges revient a shorter le bitcoin",
@@ -414,7 +414,7 @@ export const Questions = [
     ,
     {
         id: 48,
-        question: "Un Hardware Wallet est-il connecte a internet",
+        question: "Un Hardware Wallet est-il connecte a internet ?",
         answers: ["Oui", "Non"],
         correct: "Non",
         ressources: ["https://www.cointribune.com/analyses/cybersecurite/les-differents-types-de-wallets-crypto/", "Cointribune - Type de wallets",
@@ -423,7 +423,7 @@ export const Questions = [
     ,
     {
         id: 49,
-        question: "Les Etats peuvent-ils arreter Bitcoin",
+        question: "Les Etats peuvent-ils arreter Bitcoin ?",
         answers: ["Oui", "Non"],
         correct: "Non",
         ressources: ["https://www.youtube.com/watch?v=C2da4NiMPF0", "Decouvre Bitcoin - Bitcoin Q&A N°26 - Et si Bitcoin se fait bannir ?"]
@@ -440,7 +440,7 @@ export const Questions = [
     {
         id: 51,
         question: "Un nœud Bitcoin permet :",
-        answers: ["De verifier l'integrite des transactions", "Miner du Bitcoin", "Contrôler le prix du Bitcoin", "interdire des transactions"],
+        answers: ["De verifier l'integrite des transactions", "Miner du Bitcoin", "Controler le prix du Bitcoin", "interdire des transactions"],
         correct: "De verifier l'integrite des transactions",
         ressources: ["https://decouvrebitcoin.fr/thematique/noeud/", "Decouvre Bitcoin - Noeud"]
     }
@@ -456,7 +456,7 @@ export const Questions = [
     ,
     {
         id: 53,
-        question: "Le reseau Lightning Network est-il aussi securise que le reseau Bitcoin",
+        question: "Le reseau Lightning Network est-il aussi securise que le reseau Bitcoin ?",
         answers: ["Oui", "Non"],
         correct: "Non",
         ressources: ["https://decouvrebitcoin.fr/thematique/lightning-network/", "Decouvre Bitcoin - Lightning Network",]
@@ -464,7 +464,7 @@ export const Questions = [
     ,
     {
         id: 54,
-        question: "Quelle implementation n'est pas liee au Lightning Network ",
+        question: "Quelle implementation n'est pas liee au Lightning Network ?",
         answers: ["C-lightning", "Eclair", "LND", "RGB"],
         correct: "RGB",
         ressources: ["https://decouvrebitcoin.fr/thematique/lightning-network/", "Decouvre Bitcoin - Lightning Network",
@@ -473,7 +473,7 @@ export const Questions = [
     ,
     {
         id: 55,
-        question: "Sur quel protocole Bitcoin pourra-t-on executer des 'contrats intelligents - smart contracts'",
+        question: "Sur quel protocole Bitcoin pourra-t-on executer des 'contrats intelligents - smart contracts' ? ",
         answers: ["Lightning Network", "Liquid", "RGB", "reseau principal Bitcoin"],
         correct: "RGB",
         ressources: ["https://bitcoin.fr/fonctionnement-du-protocole-rgb/", "Bitcoin.fr - Fonctionnement protocole RGB",
@@ -499,11 +499,109 @@ export const Questions = [
     ,
     {
         id: 58,
-        question: "Si j'achete du Bitcoin et que je n'y touche pas (je Hold), dois-je declarer mes Bitcoins",
+        question: "Si j'achete du Bitcoin et que je n'y touche pas (je Hold), dois-je declarer mes Bitcoins ?",
         answers: ["Oui", "Non"],
         correct: "Non",
         ressources: ["https://decouvrebitcoin.fr/thematique/juridique/", "Decouvre Bitcoin - Juridique"]
     }
+    ,
+    {
+        id: 59,
+        question: "Est-ce qu'on peut stopper une transaction Bitcoin ?",
+        answers: ["Oui", "Non"],
+        correct: "Non",
+        ressources: ["https://bitcoin.fr/ce-que-vous-devez-savoir/", "Bitcoin.fr - Choses a Savoir "]
+    }
+    ,
+    {
+        id: 60,
+        question: "Comment s'appelle l'algorithme de cryptographie utilise sur Bitcoin ?",
+        answers: ["DSE", "RSA", "AES", "ECDSA"],
+        correct: "ECDSA",
+        ressources: ["https://academy.bit2me.com/fr/que-es-ecdsa-curva-eliptica/", "Bit2Me Academy - Algorithme ECDSA"]
+    }
+    ,
+    {
+        id: 61,
+        question: "La cryptographie asymetrique est-elle utilise pour Bitcoin ?",
+        answers: ["Oui", "Non"],
+        correct: "Oui",
+        ressources: ["https://bitcoin.fr/la-cryptographie-asymetrique-cest-quoi-a-quoi-ca-sert/", "Bitcoin.fr - La cryptographie asymetrique, c’est quoi ? A quoi ça sert ?",
+            "https://cryptoast.fr/cryptographie-asymetrique-bitcoin/", "Cryptoast - Cryptographie asymetrique : quel lien avec Bitcoin ?"]
+    }
+    ,
+    {
+        id: 62,
+        question: "Quelle est la taille maximum d'un bloc Bitcoin ?",
+        answers: ["1 Ko", "1 Mo", "4 Mo", "1 Go"],
+        correct: "1 Mo",
+        ressources: ["https://thecrypto.app/fr/knowledge/why-is-the-bitcoin-block-size-limited/", "The Crypto app - Pourquoi la taille du bloc Bitcoin est-elle limitee ?",
+            "https://journalducoin.com/bitcoin/secret-de-satoshi-blocs-de-bitcoin-limites-a-1-mo/", "Journal du Coin - Pourquoi les blocs Bitcoin ont une taille limite ?"]
+    }
+    ,
+    {
+        id: 63,
+        question: "Grace au protocole SegWit, theoriquement, la taille maximum peut etre de :",
+        answers: ["1 Mo", "36 Mo", "4 Mo", "1 Go"],
+        correct: "4 Mo",
+        ressources: ["https://cryptoast.fr/segwit-bitcoin-explication-definition/", "Cryptoast - Segwit explication",
+            "https://journalducoin.com/bitcoin/segwit-la-modification-de-bitcoin-que-personne-ne-comprenait/", "Journal du Coin - Segwit"]
+    }
+    ,
+    {
+        id: 64,
+        question: "Bitcoin est-il utilise uniquement pour du paiement ?",
+        answers: ["Oui", "Non"],
+        correct: "Non",
+        ressources: ["https://bitcoin.fr/les-applications-de-bitcoin-la-propriete-intellectuelle/", "Bitcoin.fr - La propriete intellectuelle",
+            "https://bitcoin.fr/une-application-de-bitcoin-le-certificat-d-authenticite/", "Bitcoin.fr - Le certificat d’authenticite",
+            "https://bitcoin.fr/shocard/", "Bitcoin.fr - Bitcoin prouve votre identite"]
+    }
+    ,
+    {
+        id: 65,
+        question: "Qu’est-ce qu’une DAO ?",
+        answers: ["Organisation Autonome decentralisee", "Organisation Autonome Centralisee", "Organisation Anonyme Centralisee", "Organisation Anonyme Decentralisee"],
+        correct: "Organisation Autonome decentralisee",
+        ressources: ["https://cryptoast.fr/dao-organisation-decentralisee/", "Cryptoast - Qu'est-ce qu'une DAO ?",
+            "https://fr.cryptonews.com/exclusives/quest-ce-quune-organisation-autonome-decentralisee-dao.htm", "CryptoNews - Qu'est-ce qu'une DAO ?"]
+    }
+    ,
+    {
+        id: 66,
+        question: "Bitcoin utilise une blockchain :",
+        answers: ["Privee", "Publique"],
+        correct: "Publique",
+        ressources: ["https://cryptoast.fr/differences-blockchain-publique-blockchain-privee/", "Cryptoast - Blockchain publique et blockchain privee : quelles differences ?"]
+    }
+    ,
+    {
+        id: 67,
+        question: "En quoi consiste un attaque 51% ?",
+        answers: ["Prendre le controle de + 50% des Bitcoin", "Prendre le controle de + 50% de la puissance de calcul du reseau", "Prendre le controle de + 50% des noeud du reseau", "Prendre le controle de + 50% des wallets Bitcoin"],
+        correct: "Prendre le controle de + 50% de la puissance de calcul du reseau",
+        ressources: ["https://www.youtube.com/watch?v=b1HU-cQ9Pds", "Grand Angle Crypto - L'attaque des 51% : mort du bitcoin ou pas ?",
+            "https://bitcoin.fr/quest-ce-quune-attaque-des-51/", "Bitdcoin.fr - Qu’est-ce qu’une attaque des 51% ?"]
+    }
+    ,
+    {
+        id: 68,
+        question: "Que signifie le Hashrate ?",
+        answers: ["Le nombre de transaction par seconde", "La puissance de calcul par minute", "La puissance de calcul par seconde", "La rapidite de vallidation d'un transaction"],
+        correct: "La puissance de calcul par seconde",
+        ressources: ["https://cryptonaute.fr/quest-ce-que-le-hashrate-en-cryptomonnaie/", "Cryptonaute - Qu’est-ce que le hashrate en cryptomonnaie ?"]
+    }
+    // ,
+    // {
+    //     id: ,
+    //     question: "",
+    //     answers: ["", "", " ", " "],
+    //     correct: "",
+    //     ressources: ["", " - ",
+    //         "", " - ",
+    //         " ", " - ",
+    //         " ", " - "]
+    // }
     // ,
     // {
     //     id: ,
