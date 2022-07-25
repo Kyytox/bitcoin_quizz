@@ -1,0 +1,46 @@
+.quizz-box-ressources {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    width: 70%;
+    padding: 0 15px 15px 15px;
+    margin-left: 15%;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-shadow: var(--box-shadow);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.quizz-box-ressources h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: black;
+    font-size: 18px;
+    font-family: 'Slater Industrial Regular';
+}
+
+.box-ressources-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.box-ressources-links a {
+    padding-left: 5px;
+    color: black;
+}
+
+
+
+
+/* Tablette and phone */
+@media (max-width: 730px) {
+
+    .quizz-box-ressources {
+        width: 92%;
+        margin-left: 0;
+    }
+}

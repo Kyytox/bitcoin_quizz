@@ -1,0 +1,67 @@
+{
+  "name": "bitcoin_quizz",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^0.27.2",
+    "bech32-converting": "^1.0.8",
+    "browserfs": "^1.4.3",
+    "browserify-fs": "^1.0.0",
+    "file-saver": "^2.0.5",
+    "FileSaver": "^0.10.0",
+    "i18next": "^21.8.14",
+    "jquery": "^3.6.0",
+    "levelup": "^5.1.1",
+    "lnbits": "^1.1.5",
+    "path": "^0.12.7",
+    "process": "^0.11.10",
+    "querystring": "^0.2.1",
+    "react": "^18.2.0",
+    "react-countdown": "^2.3.2",
+    "react-dom": "^18.2.0",
+    "react-i18next": "^11.18.1",
+    "react-qr-code": "^2.0.7",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "^5.0.1",
+    "stream": "^0.0.2",
+    "use-timer": "^2.0.1",
+    "util": "^0.12.4",
+    "web-vitals": "^2.1.4",
+    "write-json-file": "^5.0.0"
+  },
+  "scripts": {
+    "start": "set PORT=5000 && react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.1"
+  }
+}

@@ -1,0 +1,120 @@
+.box-result-quizz {
+    width: 20%;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: var(--box-shadow);
+    background: rgba(255, 255, 255, 0.5);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    margin-top: 2%;
+}
+
+.result-quizz-score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.result-quizz-score h4 {
+    color: var(--color-text);
+    font-size: 20px;
+}
+
+.result-quizz-score p {
+    color: var(--color-text);
+}
+
+hr {
+    width: 80%;
+}
+
+
+.box-claim {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#qr-code {
+    text-align: center;
+}
+
+.text-LNURL {
+    word-wrap: break-word;
+}
+
+
+#p-LNURL {
+    display: none;
+}
+
+.qr-code-infos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.qr-code-infos p {
+    color: black;
+}
+
+.qr-code-infos a {
+    text-align: center;
+    width: 100%;
+}
+
+a.qr-code-infos-link {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+
+.result-quizz-score a {
+    text-align: center;
+    width: 100%;
+}
+
+.result-quizz-score button,
+.qr-code-infos button {
+    background: var(--colo-btn-question);
+    width: 42%;
+    height: 55px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 0;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    box-shadow: var(--box-shadow);
+    color: var(--color-text);
+    font-size: 18px;
+    font-family: 'Slater Industrial Regular';
+}
+
+.result-quizz-score button:hover,
+.qr-code-infos button:hover {
+    background: var(--background-btn-hover);
+    box-shadow: var(--box-shadow-hover);
+    color: var(--color-text-hover);
+}
+
+
+
+/* Tablette and phone */
+@media (max-width: 730px) {
+
+    .box-result-quizz {
+        width: 70%;
+        margin-top: 35%;
+    }
+
+
+    .btn-claim-satoshis {
+        width: 70%;
+    }
+}
