@@ -98,7 +98,7 @@ app.get('/dataIP', function (req, res) {
                         if (IPuser === products[i].IP) {
                             IPexistJSON = true
 
-                            if (products[i].bal < 20) {
+                            if (products[i].bal < 120) {
                                 products[i].bal = products[i].bal + withdrawBal
                                 IPauthoriz = true
                             } else {

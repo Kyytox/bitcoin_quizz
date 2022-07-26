@@ -62,7 +62,7 @@ class Quizz extends React.Component {
 
     newQuestion() {
 
-        if (this.state.counterQuestion === 1) {
+        if (this.state.counterQuestion === 10) {
             randomNb = Math.floor(Math.random() * Questions.length);
             let resultQuizz = true
             // update value question 
@@ -163,7 +163,7 @@ class Quizz extends React.Component {
 
         if (this.state.reponseUser === this.state.newQuestion.correct) {
             newScore = newScore + 1
-            newSatoshis = newSatoshis + 6
+            newSatoshis = newSatoshis + 2
             result = true
         }
 
