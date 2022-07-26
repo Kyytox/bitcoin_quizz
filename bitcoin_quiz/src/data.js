@@ -182,8 +182,8 @@ export const Questions = [
         },
         en: {
             question: "What is the Bitcoin Halving ?",
-            answers: ["Is an event where mining rewards are multiplied", "It means nothing", "Is an event where mining rewards are cut in half", "It's name of the first Bitcoin block"],
-            correct: "Is an event where mining rewards are cut in half",
+            answers: ["Is an event where mining rewards are multiplied", "It means nothing", "Is an event where mining rewards cut in half", "It's name of the first Bitcoin block"],
+            correct: "Is an event where mining rewards cut in half",
             ressources: ["https://decrypt.co/resources/what-is-the-bitcoin-halving", "Decrypt - What is the Bitcoin Halving?",
                 "https://www.youtube.com/watch?v=rT3szqSykVU", "Youtube : CoinDesk - What is the Bitcoin Halving?"]
         }
@@ -322,7 +322,7 @@ export const Questions = [
             question: "What is Lightning Network ?",
             answers: ["Decantralized network built on top of Bitcoin", "a Blockchain", "other name gived at Bitcoin network", "Layer 2 of Etherum"],
             correct: "Decantralized network built on top of Bitcoin",
-            ressources: ["", ""]
+            ressources: ["https://thebitcoinrabbithole.com/journey/chapter-5-lightning-network/", "Decouvre Bitcoin - Lightning Network"]
         }
     }
     ,
@@ -338,7 +338,7 @@ export const Questions = [
             question: "Bitcoin mining is it a danger for environnment ?",
             answers: ["Yes", "No"],
             correct: "No",
-            ressources: ["", ""]
+            ressources: ["https://thebitcoinrabbithole.com/topics/ecology/", "Decouvre Bitcoin - Ecology"]
         }
     }
     ,
@@ -354,7 +354,7 @@ export const Questions = [
             question: "what is the hash function used for Bitcoin ? ",
             answers: ["SHA-256", "Etash", "Scrypt", "X11"],
             correct: "SHA-256",
-            ressources: ["", ""]
+            ressources: ["https://themoneymongers.com/bitcoin-hash/", "The money mogers - Bitcoin Hash Functions Explained Simply !!"]
         }
     }
     ,
@@ -372,7 +372,7 @@ export const Questions = [
             question: "what is the consensus algorithm used for Bitcoin ",
             answers: ["Proof-of-Importance", "Proof-of-Stake", "Proof-of-Activity", "Proof-of-Work"],
             correct: "Proof-of-Work",
-            ressources: ["", ""]
+            ressources: ["https://academy.binance.com/en/articles/proof-of-work-explained", "Binance Academy - What Is Proof of Work (PoW)?"]
         }
     }
     ,
@@ -388,7 +388,7 @@ export const Questions = [
             question: "when was pizza day ? ",
             answers: ["25 December 2010", "22 May 2010", "1 January 2009", "14 June 2011"],
             correct: "22 May 2010",
-            ressources: ["", ""]
+            ressources: ["https://www.coindesk.com/learn/what-is-bitcoin-pizza-day/", "CoinDesk - What Is Bitcoin Pizza Day?"]
         }
     }
     ,
@@ -404,7 +404,7 @@ export const Questions = [
             question: "Who is Craig Wright ?",
             answers: ["Banker", "Impostor, claiming is it Satoshis Nakamoto", "creator of Bitcoin", "CEO of exchange"],
             correct: "Impostor, claiming is it Satoshis Nakamoto",
-            ressources: ["", ""]
+            ressources: ["https://www.investopedia.com/terms/c/craig-wright.asp", "Investopedia - Who Is Craig Wright?"]
         }
     }
     ,
@@ -420,7 +420,7 @@ export const Questions = [
             question: "Economic model of Bitooin is ?",
             answers: ["Inflationary", "deflationary"],
             correct: "deflationary",
-            ressources: ["", ""]
+            ressources: ["https://www.skalex.io/deflationary-economics-bitcoin/", "Skalex - The Deflationary Economics of the Bitcoin"]
         }
     }
     ,
@@ -437,7 +437,7 @@ export const Questions = [
             question: "What is the name of the register who lists all Bitcoin transactions ?",
             answers: ["the big book", "Blockchain", "Wallet", "Bitcoin Database"],
             correct: "Blockchain",
-            ressources: ["", ""]
+            ressources: ["https://www.investopedia.com/terms/b/blockchain.asp", "Investopedia - What Is a Blockchain ?"]
         }
     }
     ,
@@ -454,7 +454,7 @@ export const Questions = [
             question: "What is a white paper ?",
             answers: ["It is a report or guide of factual information about a project", "it's synonym of Blockchain", "it's consensu algorithm of Bticoin"],
             correct: "It is a report or guide of factual information about a project",
-            ressources: ["", ""]
+            ressources: ["https://www.investopedia.com/terms/w/whitepaper.asp", "Investopedia - White Paper"]
         }
     }
     ,
@@ -470,7 +470,7 @@ export const Questions = [
             question: "What is the first real object bought by Bitcoin ?",
             answers: ["a house", "drugs", "a Pizza", "a Beer"],
             correct: "a Pizza",
-            ressources: ["", ""]
+            ressources: ["https://www.coindesk.com/learn/what-is-bitcoin-pizza-day/", "CoinDesk - What Is Bitcoin Pizza Day?"]
         }
     }
     ,
@@ -486,14 +486,14 @@ export const Questions = [
             question: "what is the first hard fork Bitcoin ?",
             answers: ["Etherum", "Bitcoin Gold", "Bitcoin XT", "Bitcoin Cash"],
             correct: "Bitcoin XT",
-            ressources: ["", ""]
+            ressources: ["https://fullycrypto.com/bitcoin-xt-the-forgotten-first-bitcoin-hard-fork", "Fully Crypto - Bitcoin XT – The Forgotten First Bitcoin Hard Fork"]
         }
     }
     ,
     {
         id: 22,
         fr: {
-            question: "Quelle est la plus petite unité du Bitcoin ?",
+            question: "Quelle est la plus petite unite du Bitcoin ?",
             answers: ["Le Satoshi", "Le Dollar", "le Micro Bitcoin", "Le MiniBit"],
             correct: "Le Satoshi",
             ressources: ["https://cryptoast.fr/satoshi-definition-explication/", "Cryptoast - Satoshi definition"]
@@ -502,7 +502,7 @@ export const Questions = [
             question: "What is the smallest unit of Bitcoin ?",
             answers: ["a Satoshi", "a Dollar", "Micro Bitcoin", "a MiniBit"],
             correct: "a Satoshi",
-            ressources: ["", ""]
+            ressources: ["https://www.investopedia.com/terms/s/satoshi.asp", "Investopedia - Satoshi"]
         }
     }
     ,
@@ -519,7 +519,7 @@ export const Questions = [
             question: "A new block is mined every",
             answers: ["5 Minutes", "10 Minutes", "1 Minutes", "1 hour"],
             correct: "10 Minutes",
-            ressources: ["", ""]
+            ressources: ["https://www.bitcoinmining.com/what-is-the-bitcoin-block-reward/", "BitcoinMinnig.com - What is the Bitcoin Mining Block Reward ?"]
         }
     }
     ,
@@ -536,7 +536,7 @@ export const Questions = [
             question: "what machin can mined Bitcoin ?",
             answers: ["a Raspberry Pi", "a ASICS", "Graphic card", "Ram"],
             correct: "a ASICS",
-            ressources: ["", ""]
+            ressources: ["https://www.investopedia.com/tech/how-does-bitcoin-mining-work/", "Investopedia - How Does Bitcoin Mining Work?"]
         }
     }
     ,
@@ -552,7 +552,7 @@ export const Questions = [
             question: "What is the type of keys that you don't to must share ?",
             answers: ["a private key", "a public key"],
             correct: "a private key",
-            ressources: ["", ""]
+            ressources: ["https://thebitcoinrabbithole.com/topics/security/", "Decouvre Bitcoin - Bitcoin security"]
         }
     }
     ,
@@ -565,10 +565,10 @@ export const Questions = [
             ressources: ["https://www.cointribune.com/guides-crypto/bien-debuter/bitcoin-btc-quest-ce-quune-whale/", "Cointribune - Une Whale"]
         },
         en: {
-            question: "Quel terme fait reference a des entites ou a des individus qui detiennent de grandes quantites de Bitcoin ?",
-            answers: ["Un Phoenix", "Une baleine (whale)", "Un lion", "Un Exchange"],
-            correct: "Une baleine (whale)",
-            ressources: ["", ""]
+            question: "What term refers entities or individuals who hold large amounts of Bitcoin ?",
+            answers: ["a Phoenix", "a whale", "a lion", "a Exchange"],
+            correct: "a whale",
+            ressources: ["https://academy.binance.com/en/glossary/whale", "Binance Academy - Whale"]
         }
     }
     ,
@@ -584,7 +584,7 @@ export const Questions = [
             question: "What is the original title of Bitcoin White Paper ?",
             answers: ["Bitcoin: A Peer-to-Peer Electronic Cash System", "Bitcoin: A Disruptive Digital Currency", "Bitcoin: A Decentralised Cash Network"],
             correct: "Bitcoin: A Peer-to-Peer Electronic Cash System",
-            ressources: ["", ""]
+            ressources: ["https://bitcoin.org/bitcoin.pdf", "Bitcoin.org - White paper Bitcoin"]
         }
     }
     ,
@@ -600,7 +600,7 @@ export const Questions = [
             question: "what is the first stock market company who buyed bitcoins in 2020 ?",
             answers: ["MicroStrategy", "Tesla", "Paypal", "Apple"],
             correct: "MicroStrategy",
-            ressources: ["", ""]
+            ressources: ["https://www.theblock.co/linked/74534/microstrategy-becomes-first-listed-company-to-buy-bitcoin", "The Block - Microstrategy"]
         }
     }
     ,
@@ -616,7 +616,7 @@ export const Questions = [
             question: "what do you need to get acces at a Bitcoin wallet ?",
             answers: ["a Password", "Public key", "a seed Phrase", "line of code"],
             correct: "a seed Phrase",
-            ressources: ["", ""]
+            ressources: ["https://thebitcoinrabbithole.com/topics/security/", "Decouvre Bitcoin - Bitcoin security"]
         }
     }
     ,
@@ -633,7 +633,7 @@ export const Questions = [
             question: "What is a Soft Fork ?",
             answers: ["A backward compatible modification of the consensus rules", "a no-backward compatible modification of the protocol"],
             correct: "A backward compatible modification of the consensus rules",
-            ressources: ["", ""]
+            ressources: ["https://learn.bybit.com/blockchain/what-is-a-soft-fork/", "Bybit Learn - What Is a Soft Fork and How Does It Work?"]
         }
     }
     ,
@@ -650,7 +650,7 @@ export const Questions = [
             question: "What is a Hard Fork ?",
             answers: ["A backward compatible modification of the consensus rules", "a no-backward compatible modification of the protocol"],
             correct: "a no-backward compatible modification of the protocol",
-            ressources: ["", ""]
+            ressources: ["https://learn.bybit.com/blockchain/what-is-a-hard-fork/", "Bybit Learn - What Is a Hard Fork & How Does it Work?"]
         }
     }
     ,
@@ -668,7 +668,7 @@ export const Questions = [
             question: "what debate has been highlighted during Bloc Size War ?",
             answers: ["about Bitcoin name", "about DEFI", "about adoption", "about scalability"],
             correct: "about scalability",
-            ressources: ["", ""]
+            ressources: ["https://steemit.com/bitcoin/@tobixen/a-brief-history-of-the-bitcoin-block-size-war", "Steemit - A brief history of the Bitcoin block size war"]
         }
     }
     ,
@@ -708,7 +708,7 @@ export const Questions = [
         id: 35,
         fr: {
             question: "Qu'est ce que le DCA ( Dollar Cost Averaging) ? ",
-            answers: ["Strategie qui consiste a acheter une cryptomonnaie de façon aleatoire", "Strategie qui consiste a acheter une cryptomonnaie pour la meme somme a des intervalles reguliers", "Strategie qui consiste a acheter une cryptomonnaie en debut de journee et de vendre en fin de journee"],
+            answers: ["Strategie qui consiste a acheter une cryptomonnaie de facon aleatoire", "Strategie qui consiste a acheter une cryptomonnaie pour la meme somme a des intervalles reguliers", "Strategie qui consiste a acheter une cryptomonnaie en debut de journee et de vendre en fin de journee"],
             correct: "Le DCA est une strategie qui consiste a acheter une cryptomonnaie pour la meme somme a des intervalles reguliers",
             ressources: ["https://coinacademy.fr/guides/linvestissement-programme-dca-la-methode-la-plus-sure-pour-investir-en-crypto/", "Coin Academy - Methode DCA"]
         },
@@ -716,7 +716,7 @@ export const Questions = [
             question: "What is DCA ( Dollar Cost Averaging) ? ",
             answers: ["Strategy where you bought cryptocurrency randomly", "strategy where you bought cryptocurrency for the same amount at regular intervals", "Strategie where you bought a cryptocurrency at the beginning of the day and sell at the end of the day"],
             correct: "strategy where you bought cryptocurrency for the same amount at regular intervals",
-            ressources: []
+            ressources: ["https://www.investopedia.com/terms/d/dollarcostaveraging.asp", "Inestopedia - Dollar-Cost Averaging (DCA)"]
         }
     }
     ,
@@ -726,13 +726,13 @@ export const Questions = [
             question: "Bitcoin est-il :",
             answers: ["Anonyme", "Pseudonyme", "Transparent"],
             correct: "Pseudonyme",
-            ressources: ["https://cryptoast.fr/bitcoin-n-est-pas-anonyme-mais-pseudonyme/", "Cryptoast - Contrairement aux idees reçues, Bitcoin n'est PAS anonyme..."]
+            ressources: ["https://cryptoast.fr/bitcoin-n-est-pas-anonyme-mais-pseudonyme/", "Cryptoast - Contrairement aux idees recues, Bitcoin n'est PAS anonyme..."]
         },
         en: {
             question: "Bitcoin is it :",
             answers: ["Anonymous", "Pseudonym", "Transparent"],
             correct: "Pseudonym",
-            ressources: []
+            ressources: ["https://www.buybitcoinworldwide.com/anonymity/", "BuyBitcoin Worldwilde - Bitcoin Anonymity - Is Bitcoin Anonymous?"]
         }
     }
     ,
@@ -748,7 +748,7 @@ export const Questions = [
             question: "What is a seed phrase ?",
             answers: ["a password chosen by you", "Sequence of words, 12 or 24 serving as your wallet recovery key", "Sequence of random characters", "Sequence of words, 12 or 24 serving as validate transactions"],
             correct: "Sequence of words, 12 or 24 serving as your wallet recovery key",
-            ressources: []
+            ressources: ["https://www.coindesk.com/learn/what-is-a-seed-phrase/", "CoinDesk - What Is a Seed Phrase?"]
         }
     }
     ,
@@ -765,7 +765,7 @@ export const Questions = [
             question: "Were there other cryptocurrencies before Bitcoin ?",
             answers: ["Yes", "No"],
             correct: "Yes",
-            ressources: []
+            ressources: ["https://www.investopedia.com/tech/were-there-cryptocurrencies-bitcoin/", "Inestopedia - What Was the First Cryptocurrency?"]
         }
     }
     ,
@@ -781,7 +781,7 @@ export const Questions = [
             question: "What is Altcoins ?",
             answers: ["all crypto except Bitcoin", "all crypto and Bitcoin", "other name gived to Bitcoin"],
             correct: "all crypto except Bitcoin",
-            ressources: []
+            ressources: ["https://academy.binance.com/en/glossary/altcoin", "Binance Academy - Altcoin"]
         }
     }
     ,
@@ -797,7 +797,7 @@ export const Questions = [
             question: "what is a node for ?",
             answers: ["Valid transactions and mined Bitcoin", "decentralized network - decided on consensus rules - receive and send transactions", "decentralized network - Mined Bitcoin"],
             correct: "decentralized network - decided on consensus rules - receive and send transactions",
-            ressources: []
+            ressources: ["https://thebitcoinrabbithole.com/topics/bitcoin-node/", "Decouvre Bitcoin - Nodes"]
         }
     }
     ,
@@ -813,7 +813,7 @@ export const Questions = [
             question: "Can you run a Bitcoin node on your personal computer ?",
             answers: ["Yes", "No"],
             correct: "Yes",
-            ressources: []
+            ressources: ["https://thebitcoinrabbithole.com/topics/bitcoin-node/", "Decouvre Bitcoin - Nodes"]
         }
     }
     ,
@@ -830,7 +830,7 @@ export const Questions = [
             question: "what type of wallet is more safer ?",
             answers: ["Cold Wallet", "Wallet Mutli-signature", "Hot Wallet"],
             correct: "Wallet Mutli-signature",
-            ressources: []
+            ressources: ["https://thebitcoinrabbithole.com/topics/security/", "Decouvre Bitcoin - Bitcoin security"]
         }
     }
     ,
@@ -846,7 +846,7 @@ export const Questions = [
             question: "how many satoshis there in 1 bitcoin ?",
             answers: ["100 Thousand", "1 Million", "100 Million", "1 Billion"],
             correct: "100 Million",
-            ressources: []
+            ressources: ["https://www.investopedia.com/terms/s/satoshi.asp", "Investopedia - Satoshi"]
         }
     }
     ,
@@ -862,7 +862,7 @@ export const Questions = [
             question: "lighting network does it allow to do immediate transactions ?",
             answers: ["Yes", "No"],
             correct: "Yes",
-            ressources: []
+            ressources: ["https://thebitcoinrabbithole.com/journey/chapter-5-lightning-network/", "Decouvre Bitcoin - Lightning Network"]
         }
     }
     ,
@@ -878,7 +878,7 @@ export const Questions = [
             question: "lighting network allows you to apply transaction fees :",
             answers: ["on the amount of the transaction", "on the weight of the transaction", "this is miners and nodes who set fees"],
             correct: "on the amount of the transaction",
-            ressources: []
+            ressources: ["https://thebitcoinrabbithole.com/journey/chapter-5-lightning-network/", "Decouvre Bitcoin - Lightning Network"]
         }
     }
     ,
@@ -895,7 +895,7 @@ export const Questions = [
             question: "The Bitcoin network set transaction fees based on ?",
             answers: ["the amount of the transaction", "the weight of the transaction", "electicity price"],
             correct: "the weight of the transaction",
-            ressources: []
+            ressources: ["https://river.com/learn/how-bitcoin-fees-work/", "River Financial - How Bitcoin Fees Work"]
         }
     }
     ,
@@ -912,7 +912,7 @@ export const Questions = [
             question: "bitcoins in your account on exchange do they belong to you ?",
             answers: ["Yes", "No"],
             correct: "No",
-            ressources: []
+            ressources: ["https://www.ledger.com/academy/not-your-keys-not-your-coins-why-it-matters", "Ledger - Not Your Keys, Not Your Coins. It’s That Simple."]
         }
     }
     ,
@@ -977,7 +977,7 @@ export const Questions = [
             question: "a Bitcoin node allows :",
             answers: ["verify transactions integrity", "mined Bitcoin", "control Bitcoin price", "ban transactions"],
             correct: "verify transactions integrity",
-            ressources: []
+            ressources: ["https://thebitcoinrabbithole.com/topics/bitcoin-node/", "Decouvre Bitcoin - Nodes"]
         }
     }
     ,
@@ -994,7 +994,7 @@ export const Questions = [
             question: "when you open a lightning network canal can you receive bitoins immediately ?",
             answers: ["Yes", "No"],
             correct: "No",
-            ressources: []
+            ressources: ["https://thebitcoinrabbithole.com/journey/chapter-5-lightning-network/", "Decouvre Bitcoin - Lightning Network"]
         }
     }
     ,
@@ -1010,7 +1010,7 @@ export const Questions = [
             question: "lightning network it is as secure than Bitcoin network ?",
             answers: ["Yes", "No"],
             correct: "No",
-            ressources: []
+            ressources: ["https://thebitcoinrabbithole.com/journey/chapter-5-lightning-network/", "Decouvre Bitcoin - Lightning Network"]
         }
     }
     ,
@@ -1027,7 +1027,7 @@ export const Questions = [
             question: "what implementation is not related to lightning network ?",
             answers: ["C-lightning", "Eclair", "LND", "RGB"],
             correct: "RGB",
-            ressources: []
+            ressources: ["https://thebitcoinrabbithole.com/journey/chapter-5-lightning-network/", "Decouvre Bitcoin - Lightning Network"]
         }
     }
     ,
@@ -1109,7 +1109,7 @@ export const Questions = [
             question: "Can we stop Bitcoin transaction ?",
             answers: ["Yes", "No"],
             correct: "No",
-            ressources: []
+            ressources: ["https://bitcoin.org/en/you-need-to-know", "Bitcoin.org - Some things you need to know"]
         }
     }
     ,
@@ -1125,7 +1125,7 @@ export const Questions = [
             question: "what is the name cryptograpy algorithm used in Bitcoin ?",
             answers: ["DSE", "RSA", "AES", "ECDSA"],
             correct: "ECDSA",
-            ressources: []
+            ressources: ["https://www.pluralsight.com/guides/the-cryptography-of-bitcoin", "Pluralsight - The Cryptography of Bitcoin"]
         }
     }
     ,
@@ -1135,14 +1135,14 @@ export const Questions = [
             question: "La cryptographie asymetrique est-elle utilise pour Bitcoin ?",
             answers: ["Oui", "Non"],
             correct: "Oui",
-            ressources: ["https://bitcoin.fr/la-cryptographie-asymetrique-cest-quoi-a-quoi-ca-sert/", "Bitcoin.fr - La cryptographie asymetrique, c’est quoi ? A quoi ça sert ?",
+            ressources: ["https://bitcoin.fr/la-cryptographie-asymetrique-cest-quoi-a-quoi-ca-sert/", "Bitcoin.fr - La cryptographie asymetrique, c’est quoi ? A quoi ca sert ?",
                 "https://cryptoast.fr/cryptographie-asymetrique-bitcoin/", "Cryptoast - Cryptographie asymetrique : quel lien avec Bitcoin ?"]
         },
         en: {
             question: "Asymmetric cryptography is it used in Bitcoin ?",
             answers: ["Yes", "No"],
             correct: "Yes",
-            ressources: []
+            ressources: ["https://www.bitpanda.com/academy/en/lessons/what-is-asymmetric-encryption/", "BitPanda - What is asymmetric encryption ?"]
         }
     }
     ,
@@ -1159,7 +1159,7 @@ export const Questions = [
             question: "What is the maximum size of a bitcoin block ?",
             answers: ["1 Ko", "1 Mo", "4 Mo", "1 Go"],
             correct: "1 Mo",
-            ressources: []
+            ressources: ["https://blog.bitstamp.net/post/what-is-block-size/", "Bitstamp - What is block size ?"]
         }
     }
     ,
@@ -1176,7 +1176,7 @@ export const Questions = [
             question: "With SegWit protocol, theoretically, the maximum size of a bitcoin block can be :",
             answers: ["1 Mo", "36 Mo", "4 Mo", "1 Go"],
             correct: "4 Mo",
-            ressources: []
+            ressources: ["https://blog.bitstamp.net/post/what-is-block-size/", "Bitstamp - What is block size ?"]
         }
     }
     ,
@@ -1211,7 +1211,7 @@ export const Questions = [
             question: "What is a DAO ?",
             answers: ["A decentralized autonomous organization", "A Centralized autonomous organization", "Centralized anonymous organization", "Decentralized anonymous organization"],
             correct: "A decentralized autonomous organization",
-            ressources: []
+            ressources: ["https://www.coindesk.com/learn/what-is-a-dao/", "CoinDesk - What Is a DAO?"]
         }
     }
     ,
@@ -1227,7 +1227,7 @@ export const Questions = [
             question: "Bitcoin used blockchain :",
             answers: ["Private", "Public"],
             correct: "Public",
-            ressources: []
+            ressources: ["https://www.investopedia.com/terms/b/blockchain.asp", "Investopedia - What Is a Blockchain ?"]
         }
     }
     ,
@@ -1244,7 +1244,7 @@ export const Questions = [
             question: "What is a 51% attack ?",
             answers: ["take control more than 50% of bitcoins", "take control more than 50% of the network's mining hash rate", "take control more than 50% of network's nodes", "take control more than 50% of Bitcoin wallets"],
             correct: "take control more than 50% of the network's mining hash rate",
-            ressources: []
+            ressources: ["https://www.coindesk.com/learn/what-is-a-51-attack/", "CoinDesk - What Is a 51% Attack ?"]
         }
     }
     ,
@@ -1260,7 +1260,7 @@ export const Questions = [
             question: "What is the Hashrate ?",
             answers: ["number of transactions by secondes", "computing power by minute", "computing power by seconde", "validation speed of transaction"],
             correct: "computing power by seconde",
-            ressources: []
+            ressources: ["https://www.coindesk.com/tech/2021/02/05/what-does-hashrate-mean-and-why-does-it-matter/", "CoinDesk - What Does Hashrate Mean and Why Does It Matter ?"]
         }
     }
     ,
@@ -1276,7 +1276,7 @@ export const Questions = [
             question: "What is a BIP ?",
             answers: ["Bitcoin improvement proposal", "a Bitcoin protocol", "a cryptocurrency", "a Wallet"],
             correct: "Bitcoin improvement proposal",
-            ressources: []
+            ressources: ["https://cointelegraph.com/explained/what-are-bitcoin-improvement-proposals-bips-and-how-do-they-work", "CoinTelegraph - What are Bitcoin improvement proposals (BIPs)"]
         }
     }
     ,
@@ -1287,13 +1287,13 @@ export const Questions = [
             answers: ["En partageant sa cle privee", "En partageant sa cle public", "Grace au multi-sig"],
             correct: "Grace au multi-sig",
             ressources: ["https://academy.binance.com/fr/articles/what-is-a-multisig-wallet", "Binance Academy - Qu'est-ce qu'un Portefeuille Multisig?",
-                "https://www.youtube.com/watch?v=mb6R2POi3vQ", "Hasheur - Portefeuille crypto multi-signature (Multisig) | Tutoriel, comment ça marche ?"]
+                "https://www.youtube.com/watch?v=mb6R2POi3vQ", "Hasheur - Portefeuille crypto multi-signature (Multisig) | Tutoriel, comment ca marche ?"]
         },
         en: {
             question: "How can we share access to a wallet between people securely ?",
             answers: ["share your private key", "share your public key", "with multi-sig"],
             correct: "with multi-sig",
-            ressources: []
+            ressources: ["https://coinguides.org/multisig-multi-signature-wallet/", "Coin Guides - What is a Multisig?"]
         }
     }
     ,
@@ -1303,13 +1303,13 @@ export const Questions = [
             question: "Combien de bitcoins sont mines en ce moment dans chaque bloc ?",
             answers: ["3.125", "6,25", "10", "12.5"],
             correct: "6,25",
-            ressources: ["https://bitcoin.fr/evolution-du-nombre-de-bitcoins-a-travers-le-temps/", "Bitcoin.fr - Evolution du nombre de bitcoins à travers le temps"]
+            ressources: ["https://bitcoin.fr/evolution-du-nombre-de-bitcoins-a-travers-le-temps/", "Bitcoin.fr - Evolution du nombre de bitcoins a travers le temps"]
         },
         en: {
             question: "How many bitcoins are mined right now in each block ?",
             answers: ["3.125", "6,25", "10", "12.5"],
             correct: "6,25",
-            ressources: []
+            ressources: ["https://academy.binance.com/en/halving", "Binance - Bitcoin Halving Countdown"]
         }
     }
     ,
@@ -1327,7 +1327,7 @@ export const Questions = [
             question: "In which year will the next halving ?",
             answers: ["2024", "2025", "2026", "2028"],
             correct: "2024",
-            ressources: []
+            ressources: ["https://academy.binance.com/en/halving", "Binance - Bitcoin Halving Countdown"]
         }
     }
     ,
@@ -1337,13 +1337,14 @@ export const Questions = [
             question: "Combien de mots differents contient le dictionnaire utilise pour generer les seeds prhases ?",
             answers: ["1024", "2048", "4096", "10 000"],
             correct: "2048",
-            ressources: ["https://journalducoin.com/actualites/phrases-mnemoniques/", "Journal du coin - Comment fonctionnent les Seeds ?"]
+            ressources: ["https://journalducoin.com/actualites/phrases-mnemoniques/", "Journal du coin - Comment fonctionnent les Seeds ?",
+                "https://www.bitcoinsafety.com/blogs/bitcoin/seed-phrase-list", "Bitcoin Safety - Complete list of 2048 BIP-39"]
         },
         en: {
             question: "how many words contains dictionnary used for seed phrase generation ?",
             answers: ["1024", "2048", "4096", "10 000"],
             correct: "2048",
-            ressources: []
+            ressources: ["https://www.bitcoinsafety.com/blogs/bitcoin/seed-phrase-list", "Bitcoin Safety - Complete list of 2048 BIP-39"]
         }
     }
     ,
@@ -1354,13 +1355,14 @@ export const Questions = [
             answers: ["Liquid", "SegWit", "Lightning Network", "Taproot"],
             correct: "Taproot",
             ressources: ["https://bitcoin.fr/activation-de-taproot/", "Bitcoin.fr - Activation de Taproot",
-                "https://cryptoast.fr/mise-a-niveau-taproot-bitcoin-btc-activee/", "Cryptoast - La mise à niveau Taproot de Bitcoin"]
+                "https://cryptoast.fr/mise-a-niveau-taproot-bitcoin-btc-activee/", "Cryptoast - La mise a niveau Taproot de Bitcoin"]
         },
         en: {
             question: "what is the name of the Bitcoin protocol who introduced Schnorr's signatures ?",
             answers: ["Liquid", "SegWit", "Lightning Network", "Taproot"],
             correct: "Taproot",
-            ressources: []
+            ressources: ["https://themoneymongers.com/bitcoin-schnorr-signatures/", "The Money mongers - Bitcoin Schnorr Signatures: A Beginner’s Introduction ",
+                "https://medium.com/interdax/how-will-schnorr-signatures-benefit-bitcoin-b4482cf85d40", "Medium - How will Schnorr Signatures Benefit Bitcoin ?"]
         }
     }
     ,
@@ -1377,7 +1379,7 @@ export const Questions = [
             question: "What is the main advantage of the Bitcoin proof-of-work consensus  ?",
             answers: ["Network scalability", "network security", "low transaction fees", "Network control"],
             correct: "network security",
-            ressources: []
+            ressources: ["https://99bitcoins.com/proof-of-work-proof-of-stake/", "99Bitcoins - What is Proof of Work?"]
         }
     }
     ,
@@ -1393,7 +1395,7 @@ export const Questions = [
             question: "from what electricity cost it become profitable to mined bitcoins ?",
             answers: ["1 € / kWh", "0,06 € / kWh", "0,04 € / kWh", "0,1 € / kWh"],
             correct: "0,06 € / kWh",
-            ressources: []
+            ressources: ["https://river.com/learn/is-bitcoin-mining-profitable/", "river - Is Bitcoin Mining Profitable ?"]
         }
     }
     ,
@@ -1409,7 +1411,7 @@ export const Questions = [
             question: "how many transactions contains generalement usually a full block ?",
             answers: ["1000-2000", "2000-3000", "5000", "10 000"],
             correct: "2000-3000",
-            ressources: []
+            ressources: ["https://blog.bitstamp.net/post/what-is-block-size/", "Bitstamp - What is block size ?"]
         }
     }
     ,
@@ -1425,7 +1427,7 @@ export const Questions = [
             question: "the same on-chain transaction can be used for paied several recipients ?",
             answers: ["Yes", "No"],
             correct: "Yes",
-            ressources: []
+            ressources: ["https://thecrypto.app/knowledge/how-bitcoin-transactions-work/", "The crypto App - How Bitcoin Transactions Work? ?"]
         }
     }
     ,
@@ -1441,7 +1443,8 @@ export const Questions = [
             question: "How long does a node usually take to fully sync Bitcoin blockchain ?",
             answers: ["1 hours", "1 days", "2-3 days", "8-10 days"],
             correct: "2-3 days",
-            ressources: []
+            ressources: ["https://bitcoin.org/en/full-node#what-is-a-full-node", "Bitcoin.org - Running A Full Node",
+                "https://thebitcoinrabbithole.com/topics/bitcoin-node/", "Decouvre Bitcoin - Nodes"]
         }
     }
     ,
@@ -1457,7 +1460,7 @@ export const Questions = [
             question: "On average, how many transactions per second is it possible to make on Bitcoin ?",
             answers: ["about 3 par seconde", "about 7", "about 100", "about 1000"],
             correct: "about 7",
-            ressources: []
+            ressources: ["https://coinformant.com.au/how-many-transactions-per-second-bitcoin/", "CoinFormant - How Many Transactions Per Second"]
         }
     }
     ,
@@ -1475,7 +1478,7 @@ export const Questions = [
             question: "usually, how many cost a lighting transaction ?",
             answers: ["1000 satoshis", "1 Bitcoin", "a few satoshis"],
             correct: "a few satoshis",
-            ressources: []
+            ressources: ["https://thebitcoinrabbithole.com/journey/chapter-5-lightning-network/", "Decouvre Bitcoin - Lightning Network"]
         }
     }
     ,
@@ -1493,7 +1496,7 @@ export const Questions = [
             question: "should i send a identity card for open lighting wallet ?",
             answers: ["Yes", "No"],
             correct: "No",
-            ressources: []
+            ressources: ["https://thebitcoinrabbithole.com/journey/chapter-5-lightning-network/", "Decouvre Bitcoin - Lightning Network"]
         }
     },
     {
@@ -1502,13 +1505,13 @@ export const Questions = [
             question: "Y a-t-il une difference entre Bitcoin et bitcoin ?",
             answers: ["Oui", "Non"],
             correct: "Oui",
-            ressources: []
+            ressources: ["https://blog.bitnovo.com/fr/quelle-est-la-difference-entre-bitcoin-et-bitcoin/", "Bitnovo.blog - Quelle est la difference entre Bitcoin et bitcoin ?"]
         },
         en: {
             question: "Is there a difference between Bitcoin et bitcoin ?",
             answers: ["Yes", "No"],
             correct: "Yes",
-            ressources: []
+            ressources: ["https://blog.bitnovo.com/en/difference-bitcoin-and-bitcoin-uppercase-lowercase/", "Bitnovo.blog - What is the difference between Bitcoin and bitcoin?"]
         }
     },
     {
@@ -1517,13 +1520,15 @@ export const Questions = [
             question: "Quelles sont les 3 fonctions de hashage les plus utilisees dans Bitcoin ?",
             answers: ["SHA-256 / SHA-512 / RIPEMD", "SHA-256 / SHA-384 / SHA-3", "RIPEMD / RIPEMD-128 / SHA-256", "UMAC / MD6 / Buzhash"],
             correct: "SHA-256 / SHA-512 / RIPEMD",
-            ressources: []
+            ressources: ["https://academy.binance.com/fr/articles/what-is-hashing", "Binance - Qu'est-ce que le hachage?",
+                "https://www.bitpanda.com/academy/fr/lecons/quest-ce-que-le-hachage-dans-une-transaction-blockchain/", "BitPanda - Qu'est ce que le hashage"]
         },
         en: {
             question: "What are the 3 most used hash functions in Bitcoin ?",
             answers: ["SHA-256 / SHA-512 / RIPEMD", "SHA-256 / SHA-384 / SHA-3", "RIPEMD / RIPEMD-128 / SHA-256", "UMAC / MD6 / Buzhash"],
             correct: "SHA-256 / SHA-512 / RIPEMD",
-            ressources: []
+            ressources: ["https://academy.binance.com/en/articles/what-is-hashing", "Binance - What Is Hashing?",
+                "https://www.bitpanda.com/academy/en/lessons/what-is-a-hash-function-in-a-blockchain-transaction/", "BitPanda - What is hash function"]
         }
     },
     {
@@ -1532,13 +1537,13 @@ export const Questions = [
             question: "Quel est l'un des problemes initiaux de tout moyen de paiement pair-a-pair ?",
             answers: ["la scalabilite", "la taille des blocks", "La double depense", "les frais"],
             correct: "La double depense",
-            ressources: []
+            ressources: ["https://www.bitpanda.com/academy/fr/lecons/quest-ce-que-la-double-depense/", "BitPanda - Ques'est ce que la double depense"]
         },
         en: {
             question: "What is one of the initial problems of any peer-to-peer payment method ?",
-            answers: ["scalability", "the blocks size", "double spend", "fees"],
-            correct: "double spend",
-            ressources: []
+            answers: ["scalability", "the blocks size", "double spending", "fees"],
+            correct: "double spending",
+            ressources: ["https://www.bitpanda.com/academy/en/lessons/what-is-double-spending-and-why-is-it-such-a-problem", "BitPanda - What is double-spending ?"]
         }
     },
     {
@@ -1560,7 +1565,7 @@ export const Questions = [
         id: 87,
         fr: {
             question: "Qu'est ce que le mixage de bitcoins ?",
-            answers: ["Technique pour melanger des clés privées", "Technique pour melanger des wallets", "Technique pour melanger des UTXO"],
+            answers: ["Technique pour melanger des cles privees", "Technique pour melanger des wallets", "Technique pour melanger des UTXO"],
             correct: "Technique pour melanger des UTXO",
             ressources: ["https://www.pandul.fr/post/comprendre-et-utiliser-le-coinjoin-sur-bitcoin", "Pandul - Comprendre et utiliser le CoinJoin sur Bitcoin"]
         },
@@ -1568,13 +1573,13 @@ export const Questions = [
             question: "What is bitcoins mixing ?",
             answers: ["technique for private keys mixing", "technique for wallets mixing", "technique for UTXO mixing"],
             correct: "technique for UTXO mixing",
-            ressources: []
+            ressources: ["https://bitcoinmagazine.com/technical/a-comprehensive-bitcoin-coinjoin-guide", "Bitcoin Magazine - A COMPREHENSIVE BITCOIN COINJOIN GUIDE"]
         }
     },
     {
         id: 88,
         fr: {
-            question: "Lors d'un CoinJoin de bitcoins, le coordinateur a-t-il accès au fond ?",
+            question: "Lors d'un CoinJoin de bitcoins, le coordinateur a-t-il acces au fond ?",
             answers: ["Oui", "Non"],
             correct: "Non",
             ressources: ["https://www.pandul.fr/post/comprendre-et-utiliser-le-coinjoin-sur-bitcoin", "Pandul - Comprendre et utiliser le CoinJoin sur Bitcoin"]
@@ -1583,7 +1588,7 @@ export const Questions = [
             question: "During a CoinJoin of bitcoins, the coordinator have access to the fund ?",
             answers: ["Yes", "No"],
             correct: "No",
-            ressources: []
+            ressources: ["https://bitcoinmagazine.com/technical/a-comprehensive-bitcoin-coinjoin-guide", "Bitcoin Magazine - A COMPREHENSIVE BITCOIN COINJOIN GUIDE"]
         }
     },
     {
@@ -1598,7 +1603,7 @@ export const Questions = [
             question: "What does 'Anonymity sets' ?",
             answers: ["parameter for calculate the speed of a transaction", "parameter for calculate the UTXO security level", "parameter for calculate the UTXO anonymous level"],
             correct: "parameter for calculate the UTXO anonymous level",
-            ressources: []
+            ressources: ["https://bitcoinmagazine.com/technical/how-bitcoin-anonymity-sets-work", "Bitcoin Magazine - HOW BITCOIN FORWARD-LOOKING ANONYMITY SETS WORK"]
         }
     }
 

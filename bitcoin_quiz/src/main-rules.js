@@ -3,22 +3,26 @@ import React, { useState } from 'react';
 import QRCode from 'react-qr-code';
 import './App.css';
 import ButtonPlay from './buttonPlay';
+import axios from 'axios';
 
 function Rules() {
 
     const [request, setRequest] = useState("");
     const [walletBalance, setWalletBalance] = useState();
     const [displayInvoce, setDisplayInvoce] = useState(false);
+    const [amount, setAmount] = useState();
     const lenQuestion = Questions.length
     const lang = localStorage.getItem('lang')
 
 
     const details = async () => {
-        const detailsAPI = `http://localhost:5000/details`;
-        let repDetailsAPI = await fetch(detailsAPI),
-            bodyDetailsAPI = await repDetailsAPI.json();
-        const balance = JSON.parse(bodyDetailsAPI)['balance'].toString()
-        setWalletBalance(balance.slice(0, -3))
+        if (!walletBalance) {
+            const detailsAPI = `http://localhost:5000/details`;
+            let repDetailsAPI = await fetch(detailsAPI),
+                bodyDetailsAPI = await repDetailsAPI.json();
+            const balance = JSON.parse(bodyDetailsAPI)['balance'].toString()
+            setWalletBalance(balance.slice(0, -3))
+        }
     };
 
     const handleSubmit = event => {
@@ -40,10 +44,16 @@ function Rules() {
     }
 
     const createInvoce = async () => {
-        const invoceAPI = `http://localhost:5000/invoce`;
-        let repInvoceAPI = await fetch(invoceAPI),
-            bodyInvoceAPI = await repInvoceAPI.json();
-        setRequest(JSON.parse(bodyInvoceAPI)['payment_request'])
+
+        const amountSend = { amount: amount }
+        const invoceAPI = await axios.post(`http://localhost:5000/invoce`, amountSend)
+            .then(res => res.data)
+            .catch(err => {
+                console.error(err);
+            });
+
+        console.log('test :', invoceAPI)
+        setRequest(invoceAPI)
         setDisplayInvoce(true);
     };
 
@@ -72,7 +82,7 @@ function Rules() {
                 <ButtonPlay />
                 <div className='div-suggest-question-link'>
                     <p>{lang === 'fr' ? mainRulesElt7.FR : mainRulesElt7.EN}</p>
-                    <a href="https://twitter.com/Kytox_/status/1546965980038971392" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://twitter.com/Kytox_/status/1548648185039671296" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>
                     <a href="https://github.com/Kyytox/bitcoin_quizz" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
                 </div>
 
@@ -87,7 +97,7 @@ function Rules() {
                                 bgColor="#FFFFFF"
                                 fgcolor="#000000"
                                 level="L"
-                                size="200"
+                                size={200}
                             />
                         </div>
                     ) : (
@@ -97,6 +107,13 @@ function Rules() {
                                 <span>{lang === 'fr' ? mainRulesElt6.FR : mainRulesElt6.EN} : {walletBalance}</span>
                             </div>
                             <form onSubmit={handleSubmit} id='form-envoi'>
+                                <label>Entrer un montant:
+                                    <input
+                                        className='form-input-amount'
+                                        type="text"
+                                        value={amount}
+                                        onChange={(e) => setAmount(e.target.value)} />
+                                </label>
                                 <input className='from-btn-input' type="submit" />
                             </form>
                             <span id="loader-qr-code" style={{ display: 'none' }}></span>

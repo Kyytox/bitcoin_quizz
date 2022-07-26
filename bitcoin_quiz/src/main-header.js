@@ -5,9 +5,9 @@ import './App.css';
 
 
 
-// blue = linear-gradient(90deg, rgba(5,0,158,1) 13%, rgba(0,66,170,1) 56%, rgba(0,186,201,1) 100%)
-// green = linear-gradient(90deg, rgba(0,116,47,1) 13%, rgba(0,153,28,1) 56%, rgba(0,199,26,1) 100%);
-// pink = linear-gradient(90deg, rgba(100,0,158,1) 13%, rgba(158,0,168,1) 56%, rgba(228,0,146,1) 100%)
+// blue = linear-gradient(90deg, rgb(8 4 143) 13%, rgb(34 93 187) 56%, rgb(0, 186, 201) 100%);
+// green = linear-gradient(90deg, rgb(2 110 46) 13%, rgb(30 149 52) 56%, rgb(48 205 39) 100%);
+// pink = linear-gradient(90deg, rgb(79 4 122) 13%, rgb(164 0 175) 56%, rgb(255 29 174) 100%);
 // black = linear-gradient(90deg, rgba(34,34,34,1) 18%, rgba(115,115,115,1) 56%, rgba(154,154,154,1) 100%);
 // red = linear-gradient(90deg, rgba(158, 0, 0, 1) 13%, rgba(170, 42, 0, 1) 47%, rgba(201, 176, 0, 1) 100%)
 
@@ -17,15 +17,15 @@ function Header() {
 
     const Blue = () => {
         const background = document.body
-        background.style.background = "linear-gradient(90deg, rgba(5,0,158,1) 13%, rgba(0,66,170,1) 56%, rgba(0,186,201,1) 100%)";
+        background.style.background = "linear-gradient(90deg, rgb(8 4 143) 13%, rgb(34 93 187) 56%, rgb(0, 186, 201) 100%)";
     }
     const Green = () => {
         const background = document.body
-        background.style.background = "linear-gradient(90deg, rgba(0,116,47,1) 13%, rgba(0,153,28,1) 56%, rgba(10,184,0,1) 100%)";
+        background.style.background = "linear-gradient(90deg, rgb(2 110 46) 13%, rgb(30 149 52) 56%, rgb(48 205 39) 100%)";
     }
     const Pink = () => {
         const background = document.body
-        background.style.background = "linear-gradient(90deg, rgba(100,0,158,1) 13%, rgba(158,0,168,1) 56%, rgba(228,0,146,1) 100%)";
+        background.style.background = "linear-gradient(90deg, rgb(79 4 122) 13%, rgb(164 0 175) 56%, rgb(255 29 174) 100%)";
     }
     const Black = () => {
         const background = document.body

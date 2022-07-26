@@ -5,6 +5,8 @@ const app = express()
 const PORT = process.env.PORT || 5000;
 const cors = require("cors")
 const bodyParser = require('body-parser');
+require('dotenv').config();
+const LNBits = require('lnbits').default; // using require
 
 app.use(cors())
 app.use(bodyParser.json());
@@ -16,12 +18,11 @@ let IPauthoriz = true
 
 app.post('/dataWithdraw', function (req, res) {
     withdrawBal = req.body.bal
-    // console.log('withdrawBal: ', withdrawBal)
 });
 
 app.get('/details', function (req, res) {
     axios.get("https://www.lnbits.com/api/v1/wallet",
-        { headers: { "X-Api-Key": "xxxxx" } })
+        { headers: { "X-Api-Key": process.env.REACT_APP_API_INV_KEY } })
         .then(response => {
             res.json(JSON.stringify(response.data));
         })
@@ -31,7 +32,10 @@ app.get('/details', function (req, res) {
 });
 
 
-app.get('/invoce', function (req, res) {
+app.post('/invoce', function (req, res) {
+
+    console.log('invoce')
+    console.log('amount: ', req.body.amount)
     // fs.readFile("output.json", (err, data) => {
     //     if (data != '') {
     //         products = JSON.parse(data);
@@ -46,22 +50,31 @@ app.get('/invoce', function (req, res) {
     //     });
     // });
 
-    axios.post("https://www.lnbits.com/api/v1/payments",
-        { "out": false, "amount": 0, "memo": "test", "unit": "", "webhook": "", "internal": true },
-        { headers: { "X-Api-Key": "xxxxx" } })
-        .then(response => {
-            res.json(JSON.stringify(response.data));
-        })
-        .catch(error => {
-            console.log(error);
+    // Config
+    const { wallet } = LNBits({
+        adminKey: process.env.REACT_APP_API_ADM_KEY,
+        invoiceReadKey: process.env.REACT_APP_API_INV_KEY,
+        endpoint: 'https://www.lnbits.com', //default
+    });
+
+    const newInvoice = async () => {
+        console.log('newInvoice')
+        const Invoice = await wallet.createInvoice({
+            amount: req.body.amount,
+            memo: 'Send ' + req.body.amount + ' statoshis to wallet Bitcoin Quizz',
+            out: false,
         });
+        res.json(Invoice['payment_request']);
+    }
+
+    newInvoice()
 });
 
 
 app.get('/withdraw', function (req, res) {
     axios.post("https://www.lnbits.com/withdraw/api/v1/links",
-        { "title": "test " + withdrawBal + " satoshis - Bitcoin Quizz", "min_withdrawable": 2, "max_withdrawable": withdrawBal, "uses": 1, "wait_time": 4, "is_unique": true, "webhook_url": "" },
-        { headers: { "X-Api-Key": "xxxx" } })
+        { "title": "Claim " + withdrawBal + " satoshis - Bitcoin Quizz", "min_withdrawable": 2, "max_withdrawable": withdrawBal, "uses": 1, "wait_time": 4, "is_unique": true, "webhook_url": "" },
+        { headers: { "X-Api-Key": process.env.REACT_APP_API_ADM_KEY } })
         .then(response => {
             res.json(JSON.stringify(response.data));
         })

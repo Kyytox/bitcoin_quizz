@@ -12,8 +12,10 @@
   "dependencies": {
     "axios": "^0.27.2",
     "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "http": "^0.0.1-security",
-    "https": "^1.0.0"
+    "https": "^1.0.0",
+    "lnbits": "^1.1.5"
   }
 }
