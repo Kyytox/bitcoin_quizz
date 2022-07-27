@@ -17,7 +17,7 @@ function Rules() {
 
     const details = async () => {
         if (!walletBalance) {
-            const detailsAPI = `http://localhost:5000/details`;
+            const detailsAPI = `https://bitcoinquiz.fr:3000/details`;
             let repDetailsAPI = await fetch(detailsAPI),
                 bodyDetailsAPI = await repDetailsAPI.json();
             const balance = JSON.parse(bodyDetailsAPI)['balance'].toString()

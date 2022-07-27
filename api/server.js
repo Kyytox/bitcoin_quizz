@@ -2,7 +2,8 @@ const express = require('express');
 const axios = require('axios');
 const fs = require('fs');
 const app = express()
-const PORT = process.env.PORT || 5000;
+const http = require('http');
+const https = require('https');
 const cors = require("cors")
 const bodyParser = require('body-parser');
 require('dotenv').config();
@@ -11,10 +12,33 @@ const LNBits = require('lnbits').default; // using require
 app.use(cors())
 app.use(bodyParser.json());
 
+// const hostname = 'localhost';
+const hostname = 'bitcoinquiz.fr';
+const port = 3000;
 let withdrawBal = Number()
 let IPexistJSON = false
 let IPauthoriz = true
 
+
+https
+    .createServer(
+        // Provide the private and public key to the server by reading each
+        // file's content with the readFileSync() method.
+        // {
+        //     key: fs.readFileSync("/etc/letsencrypt/live/bitcoinquiz.fr/privkey.pem"),
+        //     cert: fs.readFileSync("/etc/letsencrypt/live/bitcoinquiz.fr/fullchain.pem"),
+        // },
+        app
+    )
+    .listen(port, hostname, () => {
+        console.log(`Server running at https://${hostname}:${port}/`)
+    });
+
+
+
+app.get("/", function (req, res) {
+    res.send("It's working!")
+})
 
 app.post('/dataWithdraw', function (req, res) {
     withdrawBal = req.body.bal
@@ -128,4 +152,4 @@ app.get('/dataIP', function (req, res) {
 });
 
 
-app.listen(PORT, () => { console.log("app listening on port 5000") })
+// app.listen(PORT, () => { console.log("app listening on port 5000") })
