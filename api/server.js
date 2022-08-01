@@ -13,14 +13,15 @@ app.use(cors())
 app.use(bodyParser.json());
 
 // const hostname = 'localhost';
-const hostname = 'bitcoinquiz.fr';
-const port = 3000;
+// const hostname = 'bitcoinquiz.fr';
+const port = 6500;
 let withdrawBal = Number()
+let IPuser = ""
 let IPexistJSON = false
 let IPauthoriz = true
 
 
-https
+http
     .createServer(
         // Provide the private and public key to the server by reading each
         // file's content with the readFileSync() method.
@@ -30,8 +31,8 @@ https
         // },
         app
     )
-    .listen(port, hostname, () => {
-        console.log(`Server running at https://${hostname}:${port}/`)
+    .listen(port, () => {
+        console.log(`Server running at http://${port}/`)
     });
 
 
@@ -40,8 +41,14 @@ app.get("/", function (req, res) {
     res.send("It's working!")
 })
 
+// app.get('/', (req, res) => {
+//     res.sendFile(path.resolve(__dirname, '../bitcoin_quiz/build', 'index.html'));
+// });
+
 app.post('/dataWithdraw', function (req, res) {
     withdrawBal = req.body.bal
+    IPuser = req.body.IP
+    res.json()
 });
 
 app.get('/details', function (req, res) {
@@ -108,48 +115,42 @@ app.get('/withdraw', function (req, res) {
 });
 
 
+
 app.get('/dataIP', function (req, res) {
-    axios.get("https://geolocation-db.com/json/")
-        .then(response => {
-            const IPuser = response.data['IPv4']
 
-            var test = { IP: response.data["IPv4"], bal: withdrawBal }
+    if (IPuser) {
+        console.log('test')
+        var infosIP = { IP: IPuser, bal: withdrawBal }
 
-            fs.readFile("output.json", (err, data) => {
-                if (data != '') {
-                    products = JSON.parse(data);
-                    for (let i = 0; i < products.length; i++) {
-                        if (IPuser === products[i].IP) {
-                            IPexistJSON = true
+        fs.readFile("output.json", (err, data) => {
 
-                            if (products[i].bal < 120) {
-                                products[i].bal = products[i].bal + withdrawBal
-                                IPauthoriz = true
-                            } else {
-                                IPauthoriz = false
-                            }
-                        }
+            products = JSON.parse(data);
+            for (let i = 0; i < products.length; i++) {
+                if (IPuser === products[i].IP) {
+                    IPexistJSON = true
+
+                    if (products[i].bal < 101) {
+                        products[i].bal = products[i].bal + withdrawBal
+                        IPauthoriz = true
+                    } else {
+                        IPauthoriz = false
                     }
-
-                    if (!IPexistJSON) {
-                        products.push(test);
-                    }
-
-                    fs.writeFile("output.json", JSON.stringify(products), 'utf8', function (err) {
-                        if (err) {
-                            console.log("An error occured while writing JSON Object to File.");
-                            return console.log(err);
-                        }
-                        console.log("JSON file has been saved.");
-                    });
                 }
-                res.json(IPauthoriz);
+            }
+
+            if (!IPexistJSON) {
+                products.push(infosIP);
+            }
+
+            fs.writeFile("output.json", JSON.stringify(products), 'utf8', function (err) {
+                if (err) {
+                    console.log("An error occured while writing JSON Object to File.");
+                    return console.log(err);
+                }
+                console.log("JSON file has been saved.");
             });
-        })
-        .catch(error => {
-            console.log(error);
+
+            res.json(IPauthoriz);
         });
+    }
 });
-
-
-// app.listen(PORT, () => { console.log("app listening on port 5000") })

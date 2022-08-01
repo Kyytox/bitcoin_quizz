@@ -37,7 +37,7 @@
 
 
 /* Tablette and phone */
-@media (max-width: 730px) {
+@media (max-width: 1024px) {
 
     .quizz-box-ressources {
         width: 92%;

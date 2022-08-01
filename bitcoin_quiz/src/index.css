@@ -1,4 +1,11 @@
 @font-face {
+  font-family: 'SlimJim';
+  font-style: normal;
+  font-weight: normal;
+  src: local('SlimJim'), url('SlimJim.ttf') format('truetype');
+}
+
+@font-face {
   font-family: 'Slater Industrial Regular';
   font-style: normal;
   font-weight: normal;

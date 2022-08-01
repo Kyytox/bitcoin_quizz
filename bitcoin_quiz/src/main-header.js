@@ -62,7 +62,6 @@ function Header() {
                     <img src="/flag_FR.png" title='Francais' alt='Francais' onClick={langFR}></img>
                     <img src="/flag_EN.png" title='English' alt='English' onClick={langEN}></img>
                     <a href="https://github.com/Kyytox/bitcoin_quizz" target="_blank" rel="noopener noreferrer" title='GitHub'><i class="fa-brands fa-github"></i></a>
-                    {lang}
                 </div>
             </div>
             <h1 className='App-header-title'>Bitcoin Quiz</h1>

@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import QRCode from 'react-qr-code';
-import { resultQuizElt1, resultQuizElt2, resultQuizElt3, resultQuizElt4, resultQuizElt5, resultQuizElt6, resultQuizElt7 } from './data';
+import { useAdblockDetector } from 'react-adblock-detector';
+import { resultQuizElt1, resultQuizElt2, resultQuizElt3, resultQuizElt4, resultQuizElt5, resultQuizElt6, resultQuizElt7, resultQuizElt8 } from './data';
 import './resultQuizz.css';
 import './App';
 
@@ -12,6 +13,7 @@ function ResultQuizz(props) {
     // it's props contain function displayClaim
     const { fctDisplayClaim } = props
     const lang = localStorage.getItem('lang')
+    const [isAdblockCheckComplete, isAdblockerDetected] = useAdblockDetector();
 
     const copyLNURL = async () => {
         var textAtCopy = document.getElementById('p-LNURL').innerHTML
@@ -19,6 +21,9 @@ function ResultQuizz(props) {
         await navigator.clipboard.writeText(textAtCopy.slice(7));
     }
 
+
+    console.log('props.linkLNURL: ', props.linkLNURL)
+    console.log('isAdblockerDetected: ', isAdblockerDetected)
     return (
         <>
             <div className='box-result-quizz'>
@@ -35,11 +40,19 @@ function ResultQuizz(props) {
                             />
                         </div>
                         <div className='qr-code-infos'>
-                            <h4>{lang === 'fr' ? resultQuizElt1.FR : resultQuizElt1.EN}: {props.amountLNURL} satoshis</h4>
-                            <p>Id: {props.idLNURL}</p>
-                            <p>{lang === 'fr' ? resultQuizElt2.FR : resultQuizElt2.EN}: {props.titleLNURL}</p>
-                            <p id='p-LNURL'>LNURL: {props.linkLNURL}</p>
-                            <button onClick={copyLNURL}>Copy LNUrl</button>
+                            {props.linkLNURL ? (
+                                <>
+                                    <h4>{lang === 'fr' ? resultQuizElt1.FR : resultQuizElt1.EN}: {props.amountLNURL} satoshis</h4>
+                                    <p>Id: {props.idLNURL}</p>
+                                    <p>{lang === 'fr' ? resultQuizElt2.FR : resultQuizElt2.EN}: {props.titleLNURL}</p>
+                                    <p id='p-LNURL'>LNURL: {props.linkLNURL}</p>
+                                    <button onClick={copyLNURL}>Copy LNUrl</button>
+                                </>
+                            ) : (
+                                <div className='qr-code-infos'>
+                                    <p>{lang === 'fr' ? resultQuizElt8.FR : resultQuizElt8.EN}</p>
+                                </div>
+                            )}
                             <hr></hr>
                             <p>{lang === 'fr' ? resultQuizElt3.FR : resultQuizElt3.EN}</p>
                             <a className='qr-code-infos-link' href="https://www.walletofsatoshi.com/" target="_blank" rel="noopener noreferrer">Wallet Of Satoshi</a>

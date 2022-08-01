@@ -10,6 +10,7 @@ window.Buffer = window.Buffer || require("buffer").Buffer;
 var randomNb = Math.floor(Math.random() * Questions.length);
 const lang = localStorage.getItem('lang')
 
+
 class Quizz extends React.Component {
     constructor(props) {
         super(props);
@@ -60,9 +61,10 @@ class Quizz extends React.Component {
         });
     }
 
+
     newQuestion() {
 
-        if (this.state.counterQuestion === 10) {
+        if (this.state.counterQuestion === 20) {
             randomNb = Math.floor(Math.random() * Questions.length);
             let resultQuizz = true
             // update value question 
@@ -229,21 +231,29 @@ class Quizz extends React.Component {
     //Generate Withdraw for colletct satoshis by Users
     async withdraw() {
 
-        const withdrawBal = { bal: this.state.satoshis }
-        axios
-            .post(`http://localhost:5000/dataWithdraw`, withdrawBal)
-            .then(() => console.log(''))
-            .catch(err => {
-                console.error(err);
-            });
+        const IP = await axios.get("https://geolocation-db.com/json/");
+        const infosWithd = { bal: this.state.satoshis, IP: IP.data['IPv4'] }
+        await axios.post(`http://localhost:6500/dataWithdraw`, infosWithd);
 
-
-        const IPreq = `http://localhost:5000/dataIP`;
+        const IPreq = `http://localhost:6500/dataIP`;
         let repIPreq = await fetch(IPreq),
             bodyIPreq = await repIPreq.json();
 
+        // const withdrawBal = { bal: this.state.satoshis }
+        // axios
+        //     .post(`http://localhost:5000/dataWithdraw`, withdrawBal)
+        //     .then(() => console.log(''))
+        //     .catch(err => {
+        //         console.error(err);
+        //     });
+
+
+        // const IPreq = `http://localhost:5000/dataIP`;
+        // let repIPreq = await fetch(IPreq),
+        //     bodyIPreq = await repIPreq.json();
+
         if (bodyIPreq) {
-            const withdrawAPI = `http://localhost:5000/withdraw`;
+            const withdrawAPI = `http://localhost:6500/withdraw`;
             let repWithdrawAPI = await fetch(withdrawAPI),
                 bodyWithdrawAPI = await repWithdrawAPI.json();
 

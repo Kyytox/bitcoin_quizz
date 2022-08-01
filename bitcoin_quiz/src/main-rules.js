@@ -1,5 +1,6 @@
-import { Questions, mainRulesElt1, mainRulesElt2, mainRulesElt3, mainRulesElt4, mainRulesElt5, mainRulesElt6, mainRulesElt7 } from './data';
-import React, { useState } from 'react';
+import { Questions, mainRulesElt1, mainRulesElt2, mainRulesElt3, mainRulesElt4, mainRulesElt5, mainRulesElt6, mainRulesElt7, mainRulesElt8, mainRulesElt9, mainRulesElt10, mainRulesElt11 } from './data';
+import React, { useState, useEffect } from 'react';
+// import { useAdblockDetector } from 'react-adblock-detector';
 import QRCode from 'react-qr-code';
 import './App.css';
 import ButtonPlay from './buttonPlay';
@@ -14,10 +15,20 @@ function Rules() {
     const lenQuestion = Questions.length
     const lang = localStorage.getItem('lang')
 
+    // const [isAdblockCheckComplete, isAdblockerDetected] = useAdblockDetector();
+
+    useEffect(() => {
+        // if (isAdblockerDetected) {
+        //     window.alert(lang === 'fr' ? mainRulesElt10.FR : mainRulesElt10.EN);
+        // }
+        details();
+    })
+
+
 
     const details = async () => {
         if (!walletBalance) {
-            const detailsAPI = `https://bitcoinquiz.fr:3000/details`;
+            const detailsAPI = `http://localhost:5000/details`;
             let repDetailsAPI = await fetch(detailsAPI),
                 bodyDetailsAPI = await repDetailsAPI.json();
             const balance = JSON.parse(bodyDetailsAPI)['balance'].toString()
@@ -57,8 +68,6 @@ function Rules() {
         setDisplayInvoce(true);
     };
 
-    details();
-
     return (
         <div className='App-main'>
             <h3>{lang === 'fr' ? mainRulesElt1.FR : mainRulesElt1.EN}</h3>
@@ -79,6 +88,7 @@ function Rules() {
                 </div>
             </div >
             <div className='App-main-box-wallet'>
+                <p><i class="fa-solid fa-triangle-exclamation"></i> {lang === 'fr' ? mainRulesElt11.FR : mainRulesElt11.EN}</p>
                 <ButtonPlay />
                 <div className='div-suggest-question-link'>
                     <p>{lang === 'fr' ? mainRulesElt7.FR : mainRulesElt7.EN}</p>

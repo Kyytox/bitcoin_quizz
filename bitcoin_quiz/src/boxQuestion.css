@@ -92,7 +92,7 @@
     width: 70%;
     text-align: center;
     color: black;
-    font-size: 21px;
+    font-size: 27px;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -102,9 +102,11 @@
     padding: 40px;
     color: var(--color-text);
     font-weight: 600;
+    font-family: 'SlimJim';
 }
 
 .box-question-answers {
+    min-height: 270px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -118,8 +120,9 @@
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
     width: 48%;
-    min-height: 100px;
-    font-size: 18px;
+    min-height: 110px;
+    max-height: 150px;
+    font-size: 24px;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -130,7 +133,13 @@
     box-shadow: var(--box-shadow);
     padding: 10px;
     color: var(--color-text);
-    font-family: 'Slater Industrial Regular';
+    font-family: 'SlimJim';
+}
+
+.box-question-answers button {
+    min-height: 110px;
+    max-height: 125px;
+    font-size: 27px;
 }
 
 .box-question-result-answers button {
@@ -142,11 +151,12 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    min-height: 160px;
 }
 
 .box-question-result-answers p {
     margin-top: 5px;
-    font-size: 18px;
+    font-size: 27px;
 }
 
 .div-button-next {
@@ -220,7 +230,7 @@
 
 
 /* Tablette and phone */
-@media (max-width: 730px) {
+@media (max-width: 1024px) {
     .quizz-box-question {
         width: 90%;
         margin-top: 7%;
