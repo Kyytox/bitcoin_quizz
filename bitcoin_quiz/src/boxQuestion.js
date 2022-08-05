@@ -46,7 +46,9 @@ function BoxQuestion(props) {
                 }
             </div >
             <div className='div-button-next'>
-                <button className='button-next' onClick={verifResult}>Next</button >
+                {props.answers[2] ? <button className='button-next' onClick={verifResult}>Next</button >
+                    : <button className='button-next-two' onClick={verifResult}>Next</button >
+                }
             </div>
         </div >
     );

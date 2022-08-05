@@ -22,7 +22,7 @@ class Quizz extends React.Component {
             displayResult: false,
             resultQuizz: false,
             satoshis: 0,
-            timer: 15,
+            timer: 15000,
             displayClaim: false,
             idLNURL: "",
             titleLNURL: "",
@@ -64,7 +64,7 @@ class Quizz extends React.Component {
 
     newQuestion() {
 
-        if (this.state.counterQuestion === 20) {
+        if (this.state.counterQuestion === 1) {
             randomNb = Math.floor(Math.random() * Questions.length);
             let resultQuizz = true
             // update value question 
@@ -233,9 +233,9 @@ class Quizz extends React.Component {
 
         const IP = await axios.get("https://geolocation-db.com/json/");
         const infosWithd = { bal: this.state.satoshis, IP: IP.data['IPv4'] }
-        await axios.post(`http://localhost:6500/dataWithdraw`, infosWithd);
+        await axios.post(`http://localhost:6800/dataWithdraw`, infosWithd);
 
-        const IPreq = `http://localhost:6500/dataIP`;
+        const IPreq = `http://localhost:6800/dataIP`;
         let repIPreq = await fetch(IPreq),
             bodyIPreq = await repIPreq.json();
 
@@ -253,7 +253,7 @@ class Quizz extends React.Component {
         //     bodyIPreq = await repIPreq.json();
 
         if (bodyIPreq) {
-            const withdrawAPI = `http://localhost:6500/withdraw`;
+            const withdrawAPI = `http://localhost:6800/withdraw`;
             let repWithdrawAPI = await fetch(withdrawAPI),
                 bodyWithdrawAPI = await repWithdrawAPI.json();
 

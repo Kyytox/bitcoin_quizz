@@ -7,7 +7,6 @@
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
     border: 1px solid rgba(255, 255, 255, 0.25);
-    margin-top: 2%;
 }
 
 .result-quizz-score {
@@ -110,7 +109,7 @@ a.qr-code-infos-link {
 
     .box-result-quizz {
         width: 70%;
-        margin-top: 35%;
+        margin-top: 10%;
     }
 
 

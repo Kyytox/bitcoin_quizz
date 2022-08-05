@@ -584,7 +584,7 @@ export const Questions = [
             ressources: ["https://www.cointribune.com/guides-crypto/bien-debuter/bitcoin-btc-quest-ce-quune-whale/", "Cointribune - Une Whale"]
         },
         en: {
-            question: "What term refers entities or individuals who hold large amounts of Bitcoin ?",
+            question: "What term refers to entities or individuals who hold large amounts of Bitcoin ?",
             answers: ["A Phoenix", "A whale", "A lion", "A Exchange"],
             correct: "A whale",
             ressources: ["https://academy.binance.com/en/glossary/whale", "Binance Academy - Whale"]
@@ -632,7 +632,7 @@ export const Questions = [
             ressources: ["https://coinacademy.fr/academie/definition-seed-phrase/", "Coin Academy - Qu’est-ce qu’une seed phrase en crypto ?"]
         },
         en: {
-            question: "What do you need to get acces at a Bitcoin wallet ?",
+            question: "What do you need to get access to a Bitcoin wallet ?",
             answers: ["A Password", "Public key", "A seed Phrase", "Line of code"],
             correct: "A seed Phrase",
             ressources: ["https://thebitcoinrabbithole.com/topics/security/", "Decouvre Bitcoin - Bitcoin security"]
@@ -684,7 +684,7 @@ export const Questions = [
                 "https://bitconseil.fr/guerre-des-blocs-2/", "Bit Conseil - Guerre des blocs #2"]
         },
         en: {
-            question: "what debate has been highlighted during Bloc Size War ?",
+            question: "What debate has been highlighted during Bloc Size War ?",
             answers: ["About Bitcoin name", "About DEFI", "About adoption", "About scalability"],
             correct: "About scalability",
             ressources: ["https://steemit.com/bitcoin/@tobixen/a-brief-history-of-the-bitcoin-block-size-war", "Steemit - A brief history of the Bitcoin block size war"]
@@ -846,7 +846,7 @@ export const Questions = [
                 "https://www.youtube.com/watch?v=UhiclrzZ7A8", "Hasheur - Quel portefeuille crypto choisir ? Wallet"]
         },
         en: {
-            question: "What type of wallet is more safer ?",
+            question: "What type of wallet is safer ?",
             answers: ["Cold Wallet", "Wallet Mutli-signature", "Hot Wallet"],
             correct: "Wallet Mutli-signature",
             ressources: ["https://thebitcoinrabbithole.com/topics/security/", "Découvre Bitcoin - Bitcoin security"]
@@ -878,7 +878,7 @@ export const Questions = [
             ressources: ["https://decouvrebitcoin.fr/thematique/lightning-network/", "Découvre Bitcoin - Lightning Network"]
         },
         en: {
-            question: "Lightning Network does it allow to do immediate transactions ?",
+            question: "Lightning Network does it allow doing immediate transactions ?",
             answers: ["Yes", "No"],
             correct: "Yes",
             ressources: ["https://thebitcoinrabbithole.com/journey/chapter-5-lightning-network/", "Decouvre Bitcoin - Lightning Network"]
@@ -928,7 +928,7 @@ export const Questions = [
                 "https://cryptoast.fr/est-ce-dangereux-de-laisser-coins-exchange/", "Cryptoast - Est-ce dangereux de laisser ses cryptomonnaies sur un exchange"]
         },
         en: {
-            question: "bitcoins in your account on exchange do they belong to you ?",
+            question: "Bitcoins in your account on exchange, do they belong to you ?",
             answers: ["Yes", "No"],
             correct: "No",
             ressources: ["https://www.ledger.com/academy/not-your-keys-not-your-coins-why-it-matters", "Ledger - Not Your Keys, Not Your Coins. It’s That Simple."]
@@ -948,7 +948,7 @@ export const Questions = [
             question: "A hardware wallet it is connect to internet ?",
             answers: ["Yes", "No"],
             correct: "No",
-            ressources: []
+            ressources: ["https://bitcoinmagazine.com/culture/using-a-bitcoin-hardware-wallet", "Bitcoin Magazin - HOW BITCOINERS SHOULD USE THEIR HARDWARE WALLETS"]
         }
     }
     ,
@@ -964,7 +964,7 @@ export const Questions = [
             question: "States can stop Bitcoin ?",
             answers: ["Yes", "No"],
             correct: "No",
-            ressources: []
+            ressources: ["https://decrypt.co/37366/can-a-country-actually-ban-bitcoin", "Decrypt - Can A Country Actually Ban Bitcoin?"]
         }
     }
     ,
@@ -980,7 +980,7 @@ export const Questions = [
             question: "Mixing coins allows :",
             answers: ["Make free transactions", "More tracability", "More private life", "More secure"],
             correct: "More private life",
-            ressources: []
+            ressources: ["https://news.bitcoin.com/how-to-mix-your-bitcoins-using-coinjoin/", "Bitcoin.com - How to Mix Your Bitcoins Using Coinjoin for Greater Privacy"]
         }
     }
     ,
@@ -1010,7 +1010,7 @@ export const Questions = [
                 "https://academie.decouvrebitcoin.fr/courses/ln-201-introduction-theorique-au-lightning-network/", "Découvre Bitcoin - Introduction théorique au Lightning Network"]
         },
         en: {
-            question: "When you open a lightning network canal can you receive bitoins immediately ?",
+            question: "When you open a lightning network canal can you receive bitcoins immediately ?",
             answers: ["Yes", "No"],
             correct: "No",
             ressources: ["https://thebitcoinrabbithole.com/journey/chapter-5-lightning-network/", "Découvre Bitcoin - Lightning Network"]
@@ -1063,7 +1063,7 @@ export const Questions = [
             question: "On which Bitcoin protocol the smarts contracts will be able they be executed ?",
             answers: ["Lightning Network", "Liquid", "RGB", "principal bitcoin network"],
             correct: "RGB",
-            ressources: []
+            ressources: ["https://www.rgbfaq.com/what-is-rgb", "RGB - What is RGB ?"]
         }
     }
     ,
@@ -1076,10 +1076,10 @@ export const Questions = [
             ressources: ["https://cryptoast.fr/comparaison-bitcoin-et-or/", "Cryptoast - Comparaison du Bitcoin et de l'or"]
         },
         en: {
-            question: "Le Bitcoin est souvent comparer ",
+            question: "Bitcoin is often a comparator to ",
             answers: ["Fiat currency", "Gold", "Stocks", "precious stones"],
             correct: "Gold",
-            ressources: []
+            ressources: ["https://www.investopedia.com/news/should-you-buy-gold-or-bitcoin/", "Inestopedia - Gold vs. Bitcoin"]
         }
     }
     ,
@@ -1096,7 +1096,7 @@ export const Questions = [
             question: "What is the best investment strategy for long term ?",
             answers: ["Trading", "gambling", "DCA (Dollar Cost Averaging)", "Faucet Bitcoin"],
             correct: "DCA (Dollar Cost Averaging)",
-            ressources: []
+            ressources: ["https://www.buybitcoinworldwide.com/dollar-cost-averaging/", "BuyBitcoin WorldWide - What is Dollar Cost Averaging (DCA) in Bitcoin ?"]
         }
     }
     ,
@@ -1109,10 +1109,10 @@ export const Questions = [
             ressources: ["https://decouvrebitcoin.fr/thematique/juridique/", "Découvre Bitcoin - Juridique"]
         },
         en: {
-            question: "If i bought bitcoin but i don't touch it, i declare my bitcoins ?",
+            question: "If i bought bitcoin but I don't touch it, I declare my bitcoins ?",
             answers: ["Yes", "No"],
             correct: "No",
-            ressources: []
+            ressources: ["https://www.bitcoin.com/get-started/cryptocurrency-taxation-in-the-us/", "Bitcoin.com - Cryptocurrency taxation in the US"]
         }
     }
     ,
@@ -1141,7 +1141,7 @@ export const Questions = [
             ressources: ["https://academy.bit2me.com/fr/que-es-ecdsa-curva-eliptica/", "Bit2Me Academy - Algorithme ECDSA"]
         },
         en: {
-            question: "What is the name cryptograpy algorithm used in Bitcoin ?",
+            question: "What is the name cryptography algorithm used in Bitcoin ?",
             answers: ["DSE", "RSA", "AES", "ECDSA"],
             correct: "ECDSA",
             ressources: ["https://www.pluralsight.com/guides/the-cryptography-of-bitcoin", "Pluralsight - The Cryptography of Bitcoin"]
@@ -1210,10 +1210,10 @@ export const Questions = [
                 "https://bitcoin.fr/shocard/", "Bitcoin.fr - Bitcoin prouve votre identité"]
         },
         en: {
-            question: "Bitcoin is it used uniquely for paiements ?",
+            question: "Bitcoin is it used uniquely for payments ?",
             answers: ["Yes", "No"],
             correct: "No",
-            ressources: []
+            ressources: ["https://www.investopedia.com/ask/answers/100314/why-do-bitcoins-have-value.asp", "Investopedia - Why Do Bitcoins Have Value ?"]
         }
     }
     ,
@@ -1360,7 +1360,7 @@ export const Questions = [
                 "https://www.bitcoinsafety.com/blogs/bitcoin/seed-phrase-list", "Bitcoin Safety - Complete list of 2048 BIP-39"]
         },
         en: {
-            question: "How many words contains dictionnary used for seed phrase generation ?",
+            question: "How many words contains dictionary used for seed phrase generation ?",
             answers: ["1024", "2048", "4096", "10 000"],
             correct: "2048",
             ressources: ["https://www.bitcoinsafety.com/blogs/bitcoin/seed-phrase-list", "Bitcoin Safety - Complete list of 2048 BIP-39"]
@@ -1395,7 +1395,7 @@ export const Questions = [
                 "https://www.youtube.com/watch?v=0uYJQpuNxDs&t=590s", "Cryptoast - Qu’est-ce que le minage de crypto-monnaies ?"]
         },
         en: {
-            question: "What is the main advantage of the Bitcoin proof-of-work consensus  ?",
+            question: "What is the main advantage of the Bitcoin proof-of-work consensus ?",
             answers: ["Network scalability", "Network security", "Low transaction fees", "Network control"],
             correct: "Network security",
             ressources: ["https://99bitcoins.com/proof-of-work-proof-of-stake/", "99Bitcoins - What is Proof of Work?"]
@@ -1411,7 +1411,7 @@ export const Questions = [
             ressources: []
         },
         en: {
-            question: "From what electricity cost it become profitable to mined bitcoins ?",
+            question: "From what electricity cost it becomes profitable to mined bitcoins ?",
             answers: ["1 € / kWh", "0,06 € / kWh", "0,04 € / kWh", "0,1 € / kWh"],
             correct: "0,06 € / kWh",
             ressources: ["https://river.com/learn/is-bitcoin-mining-profitable/", "River - Is Bitcoin Mining Profitable ?"]
@@ -1427,7 +1427,7 @@ export const Questions = [
             ressources: ["https://academy.bit2me.com/fr/que-es-escalabilidad-de-bitcoin/", "Bit2me Academy - Qu'est-ce que l'évolutivité Bitcoin?"]
         },
         en: {
-            question: "How many transactions contains generalement usually a full block ?",
+            question: "How many transactions usually contains a full block ?",
             answers: ["1000-2000", "2000-3000", "5000", "10 000"],
             correct: "2000-3000",
             ressources: ["https://blog.bitstamp.net/post/what-is-block-size/", "Bitstamp - What is block size ?"]
@@ -1443,7 +1443,7 @@ export const Questions = [
             ressources: ["https://thecrypto.app/fr/knowledge/how-bitcoin-transactions-work/#One_Input_8211_Multiple_Outputs", "The crypto App - Comment fonctionnent les transactions Bitcoin ?"]
         },
         en: {
-            question: "The same on-chain transaction can be used for paied several recipients ?",
+            question: "The same on-chain transaction can be used for paid several recipients ?",
             answers: ["Yes", "No"],
             correct: "Yes",
             ressources: ["https://thecrypto.app/knowledge/how-bitcoin-transactions-work/", "The crypto App - How Bitcoin Transactions Work? ?"]
@@ -1512,7 +1512,7 @@ export const Questions = [
                 "https://www.youtube.com/watch?v=XZc9sQH3VWY&t=2928s", "Découvre Bitcoin - Comprendre le Lightning Network ! (Crash course complet)"]
         },
         en: {
-            question: "Should i send a identity card for open lighting wallet ?",
+            question: "Should I send an identity card for open lighting wallet ?",
             answers: ["Yes", "No"],
             correct: "No",
             ressources: ["https://thebitcoinrabbithole.com/journey/chapter-5-lightning-network/", "Decouvre Bitcoin - Lightning Network"]
@@ -1640,6 +1640,126 @@ export const Questions = [
             ressources: ["https://blog.bitnovo.com/en/difference-bitcoin-and-bitcoin-uppercase-lowercase/", "Bitnovo.blog - What is the difference between Bitcoin and bitcoin?"]
         }
     },
+    {
+        id: 91,
+        fr: {
+            question: "Les CBDC (monnaie numérique de banque centrale) sont-elles un danger pour nos libertés ?",
+            answers: ["Oui", "Non"],
+            correct: "Oui",
+            ressources: ["https://www.cointribune.com/tribunes/tribune-cryptomonnaies-geopolitique/bitcoin-btc-et-liberte-ou-cbdc-et-apartheid-covidienne/", "Cointribune - Bitcoin et Liberté ou CBDC et Apartheid Virale ?"]
+        },
+        en: {
+            question: "Are CBDCs a danger to our freedoms ?",
+            answers: ["Yes", "No"],
+            correct: "Yes",
+            ressources: ["https://bitcoinmagazine.com/culture/digital-dollar-threat-civil-liberties", "Bitcoin Magazine - THE DIGITAL U.S. DOLLAR IS A THREAT TO CIVIL LIBERTIES"]
+        }
+    },
+    {
+        id: 92,
+        fr: {
+            question: "Peut-on acheter du Bitcoin sur une borne physique (borne ATM) ?",
+            answers: ["Oui", "Non"],
+            correct: "Oui",
+            ressources: ["https://www.cointribune.com/analyses/investissements/3-000-atm-bitcoin-btc-ont-ete-installes-dans-le-monde-depuis-debut-2022/", "Cointribune - 3 000 ATM bitcoin (BTC) ont été installés dans le monde depuis début 2022"]
+        },
+        en: {
+            question: "Can you buy Bitcoin on physical terminals (terminals ATM) ?",
+            answers: ["Yes", "No"],
+            correct: "Yes",
+            ressources: ["https://99bitcoins.com/bitcoin/atm/", "99Bitcoins - Bitcoin ATMs – A Beginner’s Guide"]
+        }
+    },
+    {
+        id: 93,
+        fr: {
+            question: "Quel est le pourcentage de ''minage vert'' (minage avec énergie renouvelable) ?",
+            answers: ["2%", "20%", "60%", "80%"],
+            correct: "60%",
+            ressources: ["https://cryptoast.fr/energie-utilisee-miner-bitcoin-renouvelable/", "Cryptoast - L’énergie utilisée pour miner du Bitcoin serait désormais à 60% renouvelable"]
+        },
+        en: {
+            question: "What is the percentage of ''green mining'' (mining with renewable energy) ?",
+            answers: ["2%", "20%", "60%", "80%"],
+            correct: "60%",
+            ressources: ["https://cointelegraph.com/news/this-earth-day-analysts-say-bitcoin-mining-is-naturally-gravitating-to-green-energy", "Cointelegraph - Earth Day analysts say Bitcoin mining is naturally gravitating to green energy"]
+        }
+    },
+    {
+        id: 94,
+        fr: {
+            question: "Quel pays possède le plus de puissance de calcul (hashrate) ?",
+            answers: ["Chine", "USA", "Japon", "Russie"],
+            correct: "USA",
+            ressources: ["https://ccaf.io/cbeci/mining_map", "Bitcoin mining Map"]
+        },
+        en: {
+            question: "Which country has the most network hashrate ?",
+            answers: ["China", "USA", "Japan", "Russia"],
+            correct: "USA",
+            ressources: ["https://ccaf.io/cbeci/mining_map", "Bitcoin mining Map"]
+        }
+    },
+    {
+        id: 95,
+        fr: {
+            question: "Quel pays a interdit Bitcoin est 2021?",
+            answers: ["Chine", "USA", "Japon", "Russie"],
+            correct: "Chine",
+            ressources: ["https://cryptoast.fr/chine-interdit-onzieme-fois-cryptomonnaies/", "Cryptoast - La Chine interdit pour la onzième fois les cryptomonnaies"]
+        },
+        en: {
+            question: "Which country have ban Bitcoin in 2021 ?",
+            answers: ["China", "USA", "Japan", "Russia"],
+            correct: "China",
+            ressources: ["https://www.coindesk.com/learn/china-crypto-bans-a-complete-history/", "CoinDesk - China Crypto Bans: A Complete History"]
+        }
+    },
+    {
+        id: 96,
+        fr: {
+            question: "Que signifie UTXO ?",
+            answers: ["Unspent Transaction Output", "Spent Transaction Output", "Unspent Transaction Exit Output", "Unspent Transaction Exit"],
+            correct: "Unspent Transaction Output",
+            ressources: ["https://blog.bitnovo.com/fr/quest-ce-quun-utxo-dans-bitcoin/", "Bitnovo - Qu’est-ce qu’un UTXO dans Bitcoin ?"]
+        },
+        en: {
+            question: "What does UTXO mean ?",
+            answers: ["Unspent Transaction Output", "Spent Transaction Output", "Unspent Transaction Exit Output", "Unspent Transaction Exit"],
+            correct: "Unspent Transaction Output",
+            ressources: ["https://coincentral.com/utxo-beginners-explainer/", "CoinCentral - What Is a UTXO ?"]
+        }
+    },
+    {
+        id: 97,
+        fr: {
+            question: "Qu'est-ce que les UTXO ?",
+            answers: ["Les sorties d’une opération qui ont été dépensées", "Les entrées d’une opération qui n’ont pas encore été dépensées", "Les sorties d’une opération qui n’ont pas été dépensées", "Les sorties d’une opération en cours"],
+            correct: "Les sorties d’une opération qui n’ont pas été dépensées",
+            ressources: ["https://blog.bitnovo.com/fr/quest-ce-quun-utxo-dans-bitcoin/", "Bitnovo - Qu’est-ce qu’un UTXO dans Bitcoin ?"]
+        },
+        en: {
+            question: "What is a UTXO ?",
+            answers: ["The outputs of an operation that have been spent", "Inputs to an operation that have not yet been spent", "The outputs of an operation that have not been spent", "The outputs of an operation in progress"],
+            correct: "The outputs of an operation that have not been spent",
+            ressources: ["https://coincentral.com/utxo-beginners-explainer/", "CoinCentral - What Is a UTXO ?"]
+        }
+    },
+    {
+        id: 98,
+        fr: {
+            question: "De combien de sorties est composée une transaction effectuée ?",
+            answers: ["1", "2", "3", "4"],
+            correct: "2",
+            ressources: ["https://blog.bitnovo.com/fr/quest-ce-quun-utxo-dans-bitcoin/", "Bitnovo - Qu’est-ce qu’un UTXO dans Bitcoin ?"]
+        },
+        en: {
+            question: "how many outputs are made up of a transaction ?",
+            answers: ["1", "2", "3", "4"],
+            correct: "2",
+            ressources: ["https://coincentral.com/utxo-beginners-explainer/", "CoinCentral - What Is a UTXO ?"]
+        }
+    }
 ]
 
 

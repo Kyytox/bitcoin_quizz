@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 
 // const hostname = 'localhost';
 // const hostname = 'bitcoinquiz.fr';
-const port = 6500;
+const port = 6800;
 let withdrawBal = Number()
 let IPuser = ""
 let IPexistJSON = false
@@ -64,22 +64,6 @@ app.get('/details', function (req, res) {
 
 
 app.post('/invoce', function (req, res) {
-
-    console.log('invoce')
-    console.log('amount: ', req.body.amount)
-    // fs.readFile("output.json", (err, data) => {
-    //     if (data != '') {
-    //         products = JSON.parse(data);
-    //         products = [];
-    //     }
-    //     fs.writeFile("output.json", JSON.stringify(products), 'utf8', function (err) {
-    //         if (err) {
-    //             console.log("An error occured while writing JSON Object to File.");
-    //             return console.log(err);
-    //         }
-    //         console.log("JSON file has been saved.");
-    //     });
-    // });
 
     // Config
     const { wallet } = LNBits({

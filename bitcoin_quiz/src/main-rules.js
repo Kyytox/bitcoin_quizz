@@ -28,7 +28,7 @@ function Rules() {
 
     const details = async () => {
         if (!walletBalance) {
-            const detailsAPI = `http://localhost:5000/details`;
+            const detailsAPI = `http://localhost:6800/details`;
             let repDetailsAPI = await fetch(detailsAPI),
                 bodyDetailsAPI = await repDetailsAPI.json();
             const balance = JSON.parse(bodyDetailsAPI)['balance'].toString()
@@ -57,7 +57,7 @@ function Rules() {
     const createInvoce = async () => {
 
         const amountSend = { amount: amount }
-        const invoceAPI = await axios.post(`http://localhost:5000/invoce`, amountSend)
+        const invoceAPI = await axios.post(`http://localhost:6800/invoce`, amountSend)
             .then(res => res.data)
             .catch(err => {
                 console.error(err);

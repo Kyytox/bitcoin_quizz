@@ -1,24 +1,14 @@
-@keyframes prog {
-    from {
-        width: 0%;
-    }
-
-    to {
-        width: 100%;
-    }
-}
-
 .page-quizz-main {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 88vh;
+    margin-top: 3%;
+    margin-bottom: 4%;
 }
 
 .quizz-box-question {
     width: 50%;
-    height: 450px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -33,6 +23,10 @@
     font-size: 18px;
 }
 
+.box-question-counter-question p {
+    margin-top: 50px;
+}
+
 .timer {
     display: flex;
     align-items: center;
@@ -40,32 +34,11 @@
 }
 
 
-.loader {
-    display: block;
-    position: relative;
-    height: 12px;
-    width: 100%;
-    border: 0.5px solid #fff;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.loader:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 10px0;
-    background: black;
-    animation: 15s prog ease-in infinite;
-    -webkit-animation: 15s prog ease-in infinite;
-}
-
 .cpt-satoshis {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .cpt-satoshis p {
@@ -106,7 +79,6 @@
 }
 
 .box-question-answers {
-    min-height: 270px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -121,7 +93,6 @@
     backdrop-filter: blur(8px);
     width: 48%;
     min-height: 110px;
-    max-height: 150px;
     font-size: 24px;
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -137,8 +108,7 @@
 }
 
 .box-question-answers button {
-    min-height: 110px;
-    max-height: 125px;
+    max-height: 175px;
     font-size: 27px;
 }
 
@@ -163,7 +133,8 @@
     text-align: end;
 }
 
-.button-next {
+.button-next,
+.button-next-two {
     background: var(--background-1);
     width: 30%;
     height: 55px;
@@ -182,10 +153,15 @@
     font-family: 'Slater Industrial Regular';
 }
 
-.button-next:hover {
+.button-next:hover,
+.button-next-two:hover {
     background: var(--background-btn-hover);
     box-shadow: var(--box-shadow-hover);
     color: var(--color-text-hover);
+}
+
+.button-next-two {
+    margin-top: 145px;
 }
 
 
@@ -225,6 +201,142 @@
     box-shadow: var(--box-shadow-hover);
     color: var(--color-text-hover);
 }
+
+
+
+
+
+
+
+
+
+.countdown {
+    display: grid;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+}
+
+.countdown::after {
+    grid-column: 1;
+    grid-row: 1;
+    place-self: center;
+    font-family: 'Slater Industrial Regular';
+    font-size: 30px;
+    content: counter(s);
+    animation: num 15s steps(1) infinite;
+    -webkit-animation: num 15s steps(1) infinite;
+}
+
+@keyframes num {
+    0% {
+        counter-reset: s 15;
+    }
+
+    6.6% {
+        counter-reset: s 14;
+    }
+
+    13.2% {
+        counter-reset: s 13;
+    }
+
+    19.8% {
+        counter-reset: s 12;
+    }
+
+    26.4% {
+        counter-reset: s 11;
+    }
+
+    33% {
+        counter-reset: s 10;
+    }
+
+    39.6% {
+        counter-reset: s 9;
+    }
+
+    46.2% {
+        counter-reset: s 8;
+    }
+
+    52.8% {
+        counter-reset: s 7;
+    }
+
+    59.4% {
+        counter-reset: s 6;
+    }
+
+    66% {
+        counter-reset: s 5;
+    }
+
+    72.6% {
+        counter-reset: s 4;
+    }
+
+    79.2% {
+        counter-reset: s 3;
+    }
+
+    85.2% {
+        counter-reset: s 2;
+    }
+
+    92.4% {
+        counter-reset: s 1;
+    }
+
+    100% {
+        counter-reset: s 0;
+    }
+}
+
+svg {
+    grid-column: 1;
+    grid-row: 1;
+    background: none;
+    padding: 0;
+}
+
+[r] {
+    fill: none;
+    stroke: silver;
+}
+
+[r]+[r] {
+    transform: rotate(-90deg);
+    stroke-linecap: round;
+    stroke: #000000;
+    animation: arc 15s linear infinite;
+    animation-name: arc, col;
+    -webkit-animation: arc 15s linear infinite;
+}
+
+@keyframes arc {
+    0% {
+        stroke-dashoffset: 0px;
+    }
+}
+
+@keyframes col {
+    0% {
+        stroke: #000000;
+    }
+
+    100% {
+        stroke: #000000;
+    }
+}
+
+
+
+
+
+
+
 
 
 
@@ -283,5 +395,9 @@
 
     .box-question-button-next button {
         width: 70%;
+    }
+
+    .button-next-two {
+        margin-top: 30px;
     }
 }
