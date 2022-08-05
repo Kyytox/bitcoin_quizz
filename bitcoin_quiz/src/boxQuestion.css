@@ -25,6 +25,7 @@
 
 .box-question-counter-question p {
     margin-top: 50px;
+    width: 12%;
 }
 
 .timer {
@@ -44,6 +45,7 @@
 .cpt-satoshis p {
     margin-top: 2px;
     margin-bottom: 2px;
+    width: 100%;
 }
 
 .cpt-satoshis i:before {
@@ -374,6 +376,7 @@ svg {
     .box-question-counter-question p {
         order: 2;
         text-align: center;
+        width: 100%;
     }
 
     .box-question-answers {

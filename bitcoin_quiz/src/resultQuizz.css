@@ -35,6 +35,11 @@ hr {
     flex-direction: column;
 }
 
+.box-claim svg {
+    padding: 5px;
+    background-color: white;
+}
+
 
 #qr-code {
     text-align: center;

@@ -194,7 +194,7 @@ export const Questions = [
         fr: {
             question: "Qu'est-ce que le halving ?",
             answers: ["Evènement qui multiplie les récompenses accordées aux mineurs", "Ca ne veut rien dire", "Evènement qui réduit de moitié les récompenses accordées aux mineurs", "C'est le nom du premier bloc bitcoin"],
-            correct: "Evènement qui réduit de moitie les récompenses accordées aux mineurs",
+            correct: "Evènement qui réduit de moitié les récompenses accordées aux mineurs",
             ressources: ["https://www.cointribune.com/guides-crypto/bien-debuter/bitcoin-btc-quest-ce-que-le-halving/", "Cointribune.com - Le halving",
                 "https://www.youtube.com/watch?v=gl6JIA8zt90", "YouTube : Découvre Bitcoin - Bitcoin Q&A N°22 : Pourquoi un Halving tous les 4 ans ?",
                 "https://academy.binance.com/fr/halving", "Binance.com - Halving"]
@@ -728,7 +728,7 @@ export const Questions = [
         fr: {
             question: "Qu'est-ce que le DCA ( Dollar Cost Averaging) ? ",
             answers: ["Stratégie qui consiste à acheter une cryptomonnaie de façon aléatoire", "Stratégie qui consiste à acheter une cryptomonnaie pour la même somme à des intervalles réguliers", "Stratégie qui consiste à acheter une cryptomonnaie en début de journée et de vendre en fin de journée"],
-            correct: "Le DCA est une stratégie qui consiste à acheter une cryptomonnaie pour la même somme à des intervalles réguliers",
+            correct: "Stratégie qui consiste à acheter une cryptomonnaie pour la même somme à des intervalles réguliers",
             ressources: ["https://coinacademy.fr/guides/linvestissement-programme-dca-la-methode-la-plus-sure-pour-investir-en-crypto/", "Coin Academy - Methode DCA"]
         },
         en: {
@@ -906,7 +906,7 @@ export const Questions = [
         fr: {
             question: "Le réseau Bitcoin applique les frais de transaction en fonction ?",
             answers: ["Du montant de la transaction", "Du poids de la transaction", "Du prix de l'électricité"],
-            correct: "En fonction du poids de la transaction",
+            correct: "Du poids de la transaction",
             ressources: ["https://bitcoin.fr/bitcoin-comprendre-les-frais-de-transaction/", "Bitcoin.fr - Comprendre les frais de transaction",
                 "https://www.cointribune.com/blockchain/ecosysteme/les-frais-moyens-de-transaction-de-bitcoins-btc-sont-a-104-une-premiere-depuis-deux-ans/", "Cointribune - Frais de transaction"]
         },
@@ -1310,8 +1310,8 @@ export const Questions = [
         },
         en: {
             question: "How can we share access to a wallet between people securely ?",
-            answers: ["Share your private key", "Share your public key", "with multi-sig"],
-            correct: "with multi-sig",
+            answers: ["Share your private key", "Share your public key", "With multi-sig"],
+            correct: "With multi-sig",
             ressources: ["https://coinguides.org/multisig-multi-signature-wallet/", "Coin Guides - What is a Multisig?"]
         }
     }
