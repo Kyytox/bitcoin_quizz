@@ -22,7 +22,7 @@ function BoxQuestion(props) {
                 />
 
                 <div className='cpt-satoshis'>
-                    <i class="fa-brands fa-bitcoin"></i>
+                    <i className="fa-brands fa-bitcoin"></i>
                     <p>{props.satoshis} satoshis</p>
                 </div>
             </div>

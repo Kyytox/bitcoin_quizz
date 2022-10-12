@@ -85,6 +85,20 @@ export const ipAuthorizElt4 = {
 }
 
 
+// IP Find
+export const ipFindElt1 = {
+    FR: "Nous avons besoin de ton IP pour pouvoir controler le nombre de satoshis que tu as gagne aujourd'hui",
+    EN: "We need your IP to be able to check the number of satoshis you won today",
+}
+export const ipFindElt2 = {
+    FR: "Cette fonctionnalite est la pour eviter le farming de sats et les abus",
+    EN: "This feature is there to prevent farm and abuse",
+}
+export const ipFindElt3 = {
+    FR: "Rejouer",
+    EN: "Replay",
+}
+
 
 // resultQuizz
 export const resultQuizElt1 = {

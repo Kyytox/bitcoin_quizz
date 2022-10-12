@@ -21,9 +21,6 @@ function ResultQuizz(props) {
         await navigator.clipboard.writeText(textAtCopy.slice(7));
     }
 
-
-    console.log('props.linkLNURL: ', props.linkLNURL)
-    console.log('isAdblockerDetected: ', isAdblockerDetected)
     return (
         <>
             <div className='box-result-quizz'>

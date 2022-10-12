@@ -4,6 +4,7 @@ import BoxQuestion from './boxQuestion';
 import ResultQuestion from './resultQuestion';
 import ResultQuizz from './resultQuizz';
 import IPnotAuthoriz from './iPnotAuthoriz';
+import IPnotFind from './iPnotFind';
 import axios from 'axios';
 window.Buffer = window.Buffer || require("buffer").Buffer;
 
@@ -30,6 +31,7 @@ class Quizz extends React.Component {
             linkLNURL: "",
             boolRandomNb: false,
             IPauthoriz: true,
+            IPFind: true,
             newQuestion: {
                 id: Questions[randomNb].id,
                 question: lang === 'fr' ? Questions[randomNb].fr.question : Questions[randomNb].en.question,
@@ -55,7 +57,6 @@ class Quizz extends React.Component {
     }
 
     passTimerat0() {
-        console.log('passTimerat0')
         this.setState({
             timer: 1,
         });
@@ -72,7 +73,6 @@ class Quizz extends React.Component {
                 resultQuizz: resultQuizz,
             });
         } else {
-            console.log('new question')
             // new question 
             randomNb = Math.floor(Math.random() * Questions.length);
 
@@ -232,45 +232,46 @@ class Quizz extends React.Component {
     async withdraw() {
 
         const IP = await axios.get("https://geolocation-db.com/json/");
-        const infosWithd = { bal: this.state.satoshis, IP: IP.data['IPv4'] }
-        await axios.post(`http://localhost:6800/dataWithdraw`, infosWithd);
 
-        const IPreq = `http://localhost:6800/dataIP`;
-        let repIPreq = await fetch(IPreq),
-            bodyIPreq = await repIPreq.json();
-
-        // const withdrawBal = { bal: this.state.satoshis }
-        // axios
-        //     .post(`http://localhost:5000/dataWithdraw`, withdrawBal)
-        //     .then(() => console.log(''))
-        //     .catch(err => {
-        //         console.error(err);
-        //     });
-
-
-        // const IPreq = `http://localhost:5000/dataIP`;
-        // let repIPreq = await fetch(IPreq),
-        //     bodyIPreq = await repIPreq.json();
-
-        if (bodyIPreq) {
-            const withdrawAPI = `http://localhost:6800/withdraw`;
-            let repWithdrawAPI = await fetch(withdrawAPI),
-                bodyWithdrawAPI = await repWithdrawAPI.json();
-
+        if (!IP.data['IPv4']) {
+            console.log('Modif de IPFind')
             this.setState({
-                idLNURL: JSON.parse(bodyWithdrawAPI)['id'],
-                titleLNURL: JSON.parse(bodyWithdrawAPI)['title'],
-                amountLNURL: JSON.parse(bodyWithdrawAPI)['max_withdrawable'],
-                linkLNURL: JSON.parse(bodyWithdrawAPI)['lnurl'],
+                IPFind: false
             });
         } else {
-            this.setState({
-                IPauthoriz: false
-            });
+            const infosWithd = { bal: this.state.satoshis, IP: IP.data['IPv4'] }
+            await axios.post(`http://localhost:6800/dataWithdraw`, infosWithd);
+
+            const IPreq = `http://localhost:6800/dataIP`;
+            let repIPreq = await fetch(IPreq),
+                bodyIPreq = await repIPreq.json();
+
+            if (bodyIPreq) {
+                const withdrawAPI = `http://localhost:6800/withdraw`;
+                let repWithdrawAPI = await fetch(withdrawAPI),
+                    bodyWithdrawAPI = await repWithdrawAPI.json();
+
+                this.setState({
+                    idLNURL: JSON.parse(bodyWithdrawAPI)['id'],
+                    titleLNURL: JSON.parse(bodyWithdrawAPI)['title'],
+                    amountLNURL: JSON.parse(bodyWithdrawAPI)['max_withdrawable'],
+                    linkLNURL: JSON.parse(bodyWithdrawAPI)['lnurl'],
+                });
+            } else {
+                this.setState({
+                    IPauthoriz: false
+                });
+            }
         }
     }
 
 
+    renderIPnotFind() {
+        return (
+            <IPnotFind
+            />
+        );
+    }
 
     renderIPnotAuthoriz() {
         return (
@@ -306,8 +307,8 @@ class Quizz extends React.Component {
     render() {
         return (
             <div className="page-quizz-main">
-                {/* if IPauthoriz = true ==> if resultQuizz = true ==> ResultQuizz() else if displayResult = True ==> renderResult() else renderQuiz() else renderIPnotAuthoriz */}
-                {this.state.IPauthoriz ? this.state.resultQuizz ? this.renderResultQuizz() : this.state.displayResult ? this.renderResult() : this.renderQuiz() : this.renderIPnotAuthoriz()}
+                {/* if IPFind = true => if IPauthoriz = true ==> if resultQuizz = true ==> ResultQuizz() else if displayResult = True ==> renderResult() else renderQuiz() else renderIPnotAuthoriz else renderIPnotFind */}
+                {this.state.IPFind ? this.state.IPauthoriz ? this.state.resultQuizz ? this.renderResultQuizz() : this.state.displayResult ? this.renderResult() : this.renderQuiz() : this.renderIPnotAuthoriz() : this.renderIPnotFind()}
             </div>
         );
     }

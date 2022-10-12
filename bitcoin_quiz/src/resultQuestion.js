@@ -15,7 +15,7 @@ function ResultQuestion(props) {
                 <div className="box-question-counter-question">
                     <p>{lang === 'fr' ? resultQuestElt1.FR : resultQuestElt1.EN} {props.counterQuestion} / 10</p>
                     <div className='cpt-satoshis'>
-                        <i class="fa-brands fa-bitcoin"></i>
+                        <i className="fa-brands fa-bitcoin"></i>
                         <p>{props.satoshis} satoshis</p>
                     </div>
                 </div>
@@ -34,7 +34,7 @@ function ResultQuestion(props) {
                 <BoxRessources ressources={props.ressources} />
 
                 <div className="box-question-button-next">
-                    <button onClick={newQuestion}>{lang === 'fr' ? resultQuestElt4.FR : resultQuestElt4.EN}<i class="fa-solid fa-arrow-right"></i></button>
+                    <button onClick={newQuestion}>{lang === 'fr' ? resultQuestElt4.FR : resultQuestElt4.EN}<i className="fa-solid fa-arrow-right"></i></button>
                 </div>
             </div >
         </>

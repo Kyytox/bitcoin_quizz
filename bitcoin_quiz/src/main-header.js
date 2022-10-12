@@ -49,7 +49,7 @@ function Header() {
     const lang = localStorage.getItem('lang')
 
     return (
-        <header className="App-header">
+        <div className="App-header">
             <div className='app-header-div-head'>
                 <div className='div-head-btn'>
                     <button onClick={Blue} className='blue'></button>
@@ -61,11 +61,11 @@ function Header() {
                 <div className='div-head-flag-link'>
                     <img src="/flag_FR.png" title='Francais' alt='Francais' onClick={langFR}></img>
                     <img src="/flag_EN.png" title='English' alt='English' onClick={langEN}></img>
-                    <a href="https://github.com/Kyytox/bitcoin_quizz" target="_blank" rel="noopener noreferrer" title='GitHub'><i class="fa-brands fa-github"></i></a>
+                    <a href="https://github.com/Kyytox/bitcoin_quizz" target="_blank" rel="noopener noreferrer" title='GitHub'><i className="fa-brands fa-github"></i></a>
                 </div>
             </div>
             <h1 className='App-header-title'>Bitcoin Quiz</h1>
-        </header>
+        </div>
     );
 }
 

@@ -46,9 +46,11 @@ app.get("/", function (req, res) {
 // });
 
 app.post('/dataWithdraw', function (req, res) {
+
     withdrawBal = req.body.bal
     IPuser = req.body.IP
     res.json()
+
 });
 
 app.get('/details', function (req, res) {
@@ -73,7 +75,6 @@ app.post('/invoce', function (req, res) {
     });
 
     const newInvoice = async () => {
-        console.log('newInvoice')
         const Invoice = await wallet.createInvoice({
             amount: req.body.amount,
             memo: 'Send ' + req.body.amount + ' statoshis to wallet Bitcoin Quizz',
@@ -87,6 +88,11 @@ app.post('/invoce', function (req, res) {
 
 
 app.get('/withdraw', function (req, res) {
+
+    if (withdrawBal > 20) {
+        withdrawBal = 10
+    }
+
     axios.post("https://www.lnbits.com/withdraw/api/v1/links",
         { "title": "Claim " + withdrawBal + " satoshis - Bitcoin Quizz", "min_withdrawable": 2, "max_withdrawable": withdrawBal, "uses": 1, "wait_time": 4, "is_unique": true, "webhook_url": "" },
         { headers: { "X-Api-Key": process.env.REACT_APP_API_ADM_KEY } })
@@ -103,7 +109,7 @@ app.get('/withdraw', function (req, res) {
 app.get('/dataIP', function (req, res) {
 
     if (IPuser) {
-        console.log('test')
+        console.log('IPuser = OK')
         var infosIP = { IP: IPuser, bal: withdrawBal }
 
         fs.readFile("output.json", (err, data) => {

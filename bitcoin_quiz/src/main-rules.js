@@ -63,37 +63,36 @@ function Rules() {
                 console.error(err);
             });
 
-        console.log('test :', invoceAPI)
         setRequest(invoceAPI)
         setDisplayInvoce(true);
     };
 
     return (
         <div className='App-main'>
-            <h3>{lang === 'fr' ? mainRulesElt1.FR : mainRulesElt1.EN}</h3>
+            <h2>{lang === 'fr' ? mainRulesElt1.FR : mainRulesElt1.EN}</h2>
             <div className='App-main-rules'>
                 <div className='main-rules-list'>
                     <h4>{lenQuestion} {lang === 'fr' ? mainRulesElt2.FR : mainRulesElt2.EN}</h4>
-                    <i class="fa-solid fa-list"></i>
+                    <i className="fa-solid fa-list"></i>
                 </div>
 
                 <div className='main-rules-questions'>
                     <h4>10 {lang === 'fr' ? mainRulesElt3.FR : mainRulesElt3.EN}</h4>
-                    <i class="fa-solid fa-question"></i>
+                    <i className="fa-solid fa-question"></i>
                 </div>
 
                 <div className='main-rules-satoshis'>
                     <h4>10 {lang === 'fr' ? mainRulesElt4.FR : mainRulesElt4.EN}</h4>
-                    <i class="fa-brands fa-bitcoin"></i>
+                    <i className="fa-brands fa-bitcoin"></i>
                 </div>
             </div >
             <div className='App-main-box-wallet'>
-                <p><i class="fa-solid fa-triangle-exclamation"></i> {lang === 'fr' ? mainRulesElt11.FR : mainRulesElt11.EN}</p>
+                <p><i className="fa-solid fa-triangle-exclamation"></i> {lang === 'fr' ? mainRulesElt11.FR : mainRulesElt11.EN}</p>
                 <ButtonPlay />
                 <div className='div-suggest-question-link'>
                     <p>{lang === 'fr' ? mainRulesElt7.FR : mainRulesElt7.EN}</p>
-                    <a href="https://twitter.com/Kytox_/status/1548648185039671296" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="https://github.com/Kyytox/bitcoin_quizz" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://twitter.com/Kytox_/status/1548648185039671296" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-twitter"></i></a>
+                    <a href="https://github.com/Kyytox/bitcoin_quizz" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-github"></i></a>
                 </div>
 
                 <div className='div-envoi-satoshis'>

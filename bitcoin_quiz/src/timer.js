@@ -39,7 +39,7 @@ const Timer = (props: any) => {
     }
 
     return <div className="timer">
-        <div class="countdown"><svg viewBox="-50 -50 100 100" stroke-width="10">
+        <div className="countdown"><svg viewBox="-50 -50 100 100" stroke-width="10">
             <circle r="45"></circle>
             <circle r="45" stroke-dasharray="282.7433388230814" stroke-dashoffset="282.7433388230814px"></circle>
         </svg></div>
