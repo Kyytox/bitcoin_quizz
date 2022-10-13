@@ -37,7 +37,10 @@ div#root {
 }
 
 .App-header {
-  text-align: end;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: stretch;
 }
 
 
@@ -45,290 +48,90 @@ div#root {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  align-items: flex-start;
   justify-content: space-between;
+  padding: 10px;
 }
-
-.div-head-btn {
-  display: flex;
-  flex-direction: row;
-  padding-top: 9px;
-  padding-left: 20px;
-}
-
-.div-head-btn button {
-  border: none;
-  padding: 18px;
-  border-radius: 50%;
-  margin-right: 7px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-}
-
-.blue {
-  background: linear-gradient(90deg, rgba(5, 0, 158, 1) 13%, rgba(0, 66, 170, 1) 56%, rgba(0, 186, 201, 1) 100%);
-}
-
-.green {
-  background: linear-gradient(90deg, rgba(0, 116, 47, 1) 13%, rgba(0, 153, 28, 1) 56%, rgba(10, 184, 0, 1) 100%);
-}
-
-.pink {
-  background: linear-gradient(90deg, rgba(100, 0, 158, 1) 13%, rgba(158, 0, 168, 1) 56%, rgba(228, 0, 146, 1) 100%);
-}
-
-.black {
-  background: linear-gradient(90deg, rgba(9, 9, 9, 1) 0%, rgba(75, 75, 75, 1) 56%, rgba(154, 154, 154, 1) 100%);
-}
-
-.red {
-  background: linear-gradient(90deg, rgba(158, 0, 0, 1) 13%, rgba(170, 42, 0, 1) 47%, rgba(201, 176, 0, 1) 100%);
-}
-
 
 
 .div-head-flag-link {
   display: flex;
   flex-direction: row;
-  padding-top: 9px;
-  padding-right: 20px;
+  align-items: center;
 }
 
 .div-head-flag-link img {
-  width: 50px;
-  border-radius: 10px;
-  margin-left: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+  width: 23px;
+  height: 20px;
+  margin-right: 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
 
 .App-header a {
-  margin-right: 75px;
-  margin-left: 10px;
+  /* margin-right: 75px; */
+  /* margin-left: 10px; */
 }
 
 .App-header a i {
-  font-size: 40px;
+  font-size: 20px;
   color: black;
 }
 
-.App-header h1 {
-  margin-top: 0px;
-  margin-bottom: 20px;
-  font-size: 70px;
-  text-align: center;
-}
-
-.App-main {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
-}
-
-.App-main h2 {
-  font-size: 35px;
-}
-
-
-.App-main-rules {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: 80%;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
-
-.main-rules-list {
-  animation: fadein 2s;
-  -webkit-animation: fadein 2s;
-  -moz-animation: fadein 2s;
-  -ms-animation: fadein 2s;
-  -o-animation: fadein 2s;
-}
-
-
-.main-rules-questions {
-  animation: fadein 4s;
-  -webkit-animation: fadein 4s;
-  -moz-animation: fadein 4s;
-  -ms-animation: fadein 4s;
-  -o-animation: fadein 4s;
-}
-
-
-.main-rules-satoshis {
-  animation: fadein 5s;
-  -webkit-animation: fadein 5s;
-  -moz-animation: fadein 5s;
-  -ms-animation: fadein 5s;
-  -o-animation: fadein 5s;
-}
-
-.main-rules-satoshis p {
-  margin: 3px;
-  font-size: 15px;
-}
-
-.main-rules-list,
-.main-rules-questions,
-.main-rules-satoshis {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 33%;
-}
-
-
-.App-main-box-wallet a {
-  text-decoration: none;
-  color: white;
-  margin-bottom: 10px;
-}
-
-.div-suggest-question-link {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.div-suggest-question-link p {
-  width: 100%;
-  margin-top: 5px;
-  margin-bottom: 7px;
-}
-
-.div-suggest-question-link i::before {
-  font-size: 25px;
-  margin-right: 5px;
-}
-
-.main-rules-list i::before {
-  color: green;
-  font-size: 50px;
-}
-
-.main-rules-questions i::before {
-  color: rgb(255 255 255);
-  font-size: 50px;
-}
-
-
-.main-rules-satoshis i::before {
-  color: rgb(226, 192, 0);
-  font-size: 50px;
-}
-
-
-.fa-triangle-exclamation::before {
-  color: rgb(255, 217, 0);
-  font-size: 25px;
-}
-
-
-.App-main-rules h4 {
-  font-size: 23px;
-  color: white;
-}
-
-
-.App-main-box-wallet {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
-}
-
-
-.App-main-div-add-question {
-  text-align: center;
-  width: 33%;
-}
-
-.App-main-div-create-session {
-  width: 33%;
-  text-align: center;
-  margin-bottom: 15px;
-}
-
 .div-envoi-satoshis {
+  text-align: left;
+}
+
+.App-main-box-wallet-details {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.App-main-box-wallet-details span {}
+
+.App-main-box-wallet-details button {
+  background: var(--background-1);
+  margin-left: 20%;
+  margin-top: 7px;
   text-align: center;
-  width: 33%;
-}
-
-
-.App-main-div-add-question .button-add-question {
-  background: var(--colo-btn-question);
-  width: 50%;
-  height: 60px;
-  margin-top: 40px;
+  width: fit-content;
+  padding: 5px 10px;
   border: 0;
-  font-size: 27px;
-  border-radius: 30px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  -o-border-radius: 30px;
-  box-shadow: var(--box-shadow);
-  color: var(--color-text);
-}
-
-.App-main-div-add-question button:hover {
-  background: var(--background-btn-hover);
-  box-shadow: var(--box-shadow-hover);
-  color: var(--color-text-hover);
-}
-
-
-.App-main-div-create-session .button-play {
-  background: var(--colo-btn-question);
-  width: 42%;
-  height: 90px;
-  border: 0;
-  font-size: 55px;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
+  font-size: 14px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
   box-shadow: var(--box-shadow);
   color: var(--color-text);
   font-family: 'Slater Industrial Regular';
 }
 
-.App-main-div-create-session .button-play:hover {
-  background: var(--background-btn-hover);
-  box-shadow: var(--box-shadow-hover);
-  color: var(--color-text-hover);
-}
-
-
-form {
-  margin-top: 20px;
+form label {
+  font-size: 13px;
 }
 
 
 .from-btn-input {
   background: var(--background-1);
-  width: 20%;
-  height: 35px;
+  margin-left: 14%;
+  margin-top: 3px;
+  text-align: center;
+  width: fit-content;
+  padding: 5px 10px;
   border: 0;
-  font-size: 18px;
-  border-radius: 30px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  -o-border-radius: 30px;
+  font-size: 14px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
   box-shadow: var(--box-shadow);
   color: var(--color-text);
   font-family: 'Slater Industrial Regular';
@@ -341,25 +144,18 @@ form {
 }
 
 
-.App-main-box-wallet-details p {
-  margin-bottom: 5px;
-  margin-top: 0;
-}
-
-
-
 .form-input-amount {
   border-radius: 7px;
   margin-left: 3px;
   margin-right: 5px;
   text-align: center;
-  width: 20%;
-  height: 22px;
+  width: 25%;
+  height: 17px;
 }
 
 .div-envoi-satoshis p {
   word-wrap: break-word;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 #p-LNURL {
@@ -368,26 +164,29 @@ form {
 
 
 .qr-code-envoi {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; */
 }
 
 
 .qr-code-envoi button {
   background: var(--background-1);
-  width: 20%;
-  height: 25px;
-  margin-bottom: 15px;
+  margin-left: 14%;
+  margin-top: 7px;
+  text-align: center;
+  width: fit-content;
+  padding: 5px 10px;
   border: 0;
-  font-size: 15px;
-  border-radius: 30px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  -o-border-radius: 30px;
+  font-size: 14px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
   box-shadow: var(--box-shadow);
   color: var(--color-text);
+  font-family: 'Slater Industrial Regular';
 }
 
 .qr-code-envoi button:hover {
@@ -475,8 +274,297 @@ form {
 }
 
 
+.App-header h1 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 50px;
+  text-align: center;
+}
+
+.App-main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  min-height: 81.2vh;
+}
+
+.App-main h2 {
+  font-size: 22px;
+  padding: 10px;
+}
+
+
+
+
+.App-main-rules {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+
+.main-rules-list {
+  animation: fadein 2s;
+  -webkit-animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -ms-animation: fadein 2s;
+  -o-animation: fadein 2s;
+}
+
+
+.main-rules-questions {
+  animation: fadein 4s;
+  -webkit-animation: fadein 4s;
+  -moz-animation: fadein 4s;
+  -ms-animation: fadein 4s;
+  -o-animation: fadein 4s;
+}
+
+
+.main-rules-satoshis {
+  animation: fadein 5s;
+  -webkit-animation: fadein 5s;
+  -moz-animation: fadein 5s;
+  -ms-animation: fadein 5s;
+  -o-animation: fadein 5s;
+}
+
+.main-rules-satoshis p {
+  margin: 3px;
+  font-size: 15px;
+}
+
+.main-rules-list,
+.main-rules-questions,
+.main-rules-satoshis {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 70%;
+}
+
+.warning-brave {
+  display: none;
+}
+
+.App-main-box-wallet a {
+  text-decoration: none;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.div-suggest-question-link {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.div-suggest-question-link p {
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 7px;
+}
+
+.div-suggest-question-link i::before {
+  font-size: 25px;
+  margin-right: 5px;
+}
+
+.main-rules-list i::before {
+  color: green;
+  font-size: 50px;
+}
+
+.main-rules-questions i::before {
+  color: rgb(255 255 255);
+  font-size: 50px;
+}
+
+
+.main-rules-satoshis i::before {
+  color: rgb(226, 192, 0);
+  font-size: 50px;
+}
+
+
+.fa-triangle-exclamation::before {
+  color: rgb(255, 217, 0);
+  font-size: 25px;
+}
+
+.App-main-rules i {
+  margin-right: 10px;
+}
+
+.App-main-rules h4 {
+  font-size: 20px;
+  color: white;
+}
+
+
+.App-main-box-wallet {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+
+.App-main-div-add-question {
+  text-align: center;
+  width: 33%;
+}
+
+.App-main-div-create-session {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+
+.App-main-div-add-question .button-add-question {
+  background: var(--colo-btn-question);
+  width: 50%;
+  height: 60px;
+  margin-top: 40px;
+  border: 0;
+  font-size: 27px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  box-shadow: var(--box-shadow);
+  color: var(--color-text);
+}
+
+.App-main-div-add-question button:hover {
+  background: var(--background-btn-hover);
+  box-shadow: var(--box-shadow-hover);
+  color: var(--color-text-hover);
+}
+
+
+.App-main-div-create-session .button-play {
+  background: var(--colo-btn-question);
+  width: 42%;
+  height: 90px;
+  border: 0;
+  font-size: 55px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  box-shadow: var(--box-shadow);
+  color: var(--color-text);
+  font-family: 'Slater Industrial Regular';
+}
+
+.App-main-div-create-session .button-play:hover {
+  background: var(--background-btn-hover);
+  box-shadow: var(--box-shadow-hover);
+  color: var(--color-text-hover);
+}
+
+
+
+
+.btn-8,
+.btn-8 *,
+.btn-8 :after,
+.btn-8 :before,
+.btn-8:after,
+.btn-8:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-8 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn-8:disabled {
+  cursor: default;
+}
+.btn-8:-moz-focusring {
+  outline: auto;
+}
+.btn-8 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-8 [hidden] {
+  display: none;
+}
+.btn-8 {
+  border-radius: 99rem;
+  border-width: 2px;
+  overflow: hidden;
+  padding: 0.8rem 3rem;
+  position: relative;
+}
+.btn-8 span {
+  mix-blend-mode: difference;
+}
+.btn-8:after,
+.btn-8:before {
+  --tilt: 1.2rem;
+  background: #fff;
+  -webkit-clip-path: polygon(
+    0 0,
+    calc(100% - var(--tilt)) 0,
+    100% 100%,
+    0 100%
+  );
+  clip-path: polygon(0 0, calc(100% - var(--tilt)) 0, 100% 100%, 0 100%);
+  content: "";
+  display: block;
+  height: 100%;
+  left: calc(-100% - var(--tilt));
+  position: absolute;
+  top: 0;
+  transform: translateX(var(--progress, 0));
+  transition: transform 0.2s ease;
+  width: calc(100% + var(--tilt));
+}
+.btn-8:after {
+  left: 100%;
+  transform: translateX(var(--progress, 0)) rotate(180deg);
+  z-index: -1;
+}
+.btn-8:hover:before {
+  --progress: 100%;
+}
+.btn-8:hover:after {
+  --progress: -100%;
+}
+
+
 
 /* Tablette and phone */
+/*
 @media (max-width: 1024px) {
   .App-main-rules {
     flex-direction: column;
@@ -528,3 +616,5 @@ form {
     height: 50px;
   }
 }
+
+*/

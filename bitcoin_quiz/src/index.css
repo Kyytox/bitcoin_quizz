@@ -13,7 +13,8 @@
 }
 
 body {
-  background: linear-gradient(90deg, rgba(158, 0, 0, 1) 13%, rgba(170, 42, 0, 1) 47%, rgba(201, 176, 0, 1) 100%);
+  /* background: linear-gradient(90deg, rgba(158, 0, 0, 1) 13%, rgba(170, 42, 0, 1) 47%, rgba(201, 176, 0, 1) 100%); */
+  background: linear-gradient(136deg, #000000 0%, #161616 16%, #252525 33%, #353535 50%, #464646 66%, #575757 83%, #696969 100%);
   margin: 0;
   color: white;
   font-family: 'Slater Industrial Regular';

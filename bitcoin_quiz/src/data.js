@@ -16,12 +16,12 @@ export const mainRulesElt4 = {
     EN: "Satoshis by correct answer",
 }
 export const mainRulesElt5 = {
-    FR: "Envoyer des satoshis au wallet Bitcoin Quiz",
-    EN: "Send satoshis to Bitcoin Quiz wallet",
+    FR: "Envoyer",
+    EN: "Send",
 }
 export const mainRulesElt6 = {
-    FR: "Balance",
-    EN: "Balance",
+    FR: "Balance Wallet",
+    EN: "Wallet Balance",
 }
 export const mainRulesElt7 = {
     FR: "Proposer une question",
