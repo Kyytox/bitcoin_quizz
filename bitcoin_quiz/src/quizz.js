@@ -132,7 +132,7 @@ class Quizz extends React.Component {
         // collect all btn answers for put her backgroundColor = white 
         const listBtn = document.querySelectorAll("#button-answers")
         for (let i = 0; i < listBtn.length; i++) {
-            listBtn[i].style.background = "rgb(201 201 201)";
+            listBtn[i].style.background = "rgb(100 100 100)";
             listBtn[i].style.backdropFilter = "blur(8px)";
         }
     }
@@ -146,7 +146,7 @@ class Quizz extends React.Component {
         this.changeBackgroundBtn();
 
         // update color because user select this answer 
-        e.target.style.background = 'green';
+        e.target.style.background = 'rgb(2 76 2 / 60%)';
 
 
         // update value reponse user 

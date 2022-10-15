@@ -1,6 +1,6 @@
 import './boxQuestion.css';
 import BoxRessources from './boxRessources';
-import { resultQuestElt1, resultQuestElt2, resultQuestElt3, resultQuestElt4 } from './data';
+import { resultQuestElt1, resultQuestElt4 } from './data';
 
 
 function ResultQuestion(props) {
@@ -12,29 +12,46 @@ function ResultQuestion(props) {
     return (
         <>
             <div className='quizz-box-question'>
-                <div className="box-question-counter-question">
-                    <p>{lang === 'fr' ? resultQuestElt1.FR : resultQuestElt1.EN} {props.counterQuestion} / 10</p>
-                    <div className='cpt-satoshis'>
-                        <i className="fa-brands fa-bitcoin"></i>
-                        <p>{props.satoshis} satoshis</p>
+                {props.result ?
+                    <div className='box' style={{ background: 'rgb(2 76 2 / 60%)' }}>
+                        <div className="box-question-counter-question">
+                            <p>{lang === 'fr' ? resultQuestElt1.FR : resultQuestElt1.EN} {props.counterQuestion}</p>
+                            <div className='cpt-satoshis'>
+                                <p>{props.satoshis}</p>
+                                <i className="fa-brands fa-bitcoin"></i>
+                            </div>
+                        </div>
+                        <div className="box-question-question">
+                            <h4>{props.question}</h4>
+                        </div>
+
+                        <div className="box-question-result-answers">
+                            <button id='button-answers'>{props.correct}</button>
+                            
+                        </div>
+                        <BoxRessources ressources={props.ressources} />
                     </div>
-                </div>
+                :
+                    <div className='box' style={{ background: 'rgb(76 2 2 / 60%)' }}>
+                        <div className="box-question-counter-question">
+                            <p>{lang === 'fr' ? resultQuestElt1.FR : resultQuestElt1.EN} {props.counterQuestion}</p>
+                            <div className='cpt-satoshis'>
+                                <p>{props.satoshis}</p>
+                                <i className="fa-brands fa-bitcoin"></i>
+                            </div>
+                        </div>
+                        <div className="box-question-question">
+                            <h4>{props.question}</h4>
+                        </div>
 
-                <div className="box-question-question">
-                    <h4>{props.question}</h4>
-                </div>
-
-                <div className="box-question-result-answers">
-                    {props.result
-                        ? <button id='button-answers' style={{ background: 'green' }}><p style={{ color: 'white' }}>{lang === 'fr' ? resultQuestElt2.FR : resultQuestElt2.EN}</p>{props.correct}</button>
-                        : <button id='button-answers' style={{ background: 'Red' }}><p style={{ color: 'white' }}>{lang === 'fr' ? resultQuestElt3.FR : resultQuestElt3.EN}</p>{props.correct}</button>
-                    }
-                </div>
-
-                <BoxRessources ressources={props.ressources} />
-
-                <div className="box-question-button-next">
-                    <button onClick={newQuestion}>{lang === 'fr' ? resultQuestElt4.FR : resultQuestElt4.EN}<i className="fa-solid fa-arrow-right"></i></button>
+                        <div className="box-question-result-answers">
+                            <button id='button-answers'>{props.correct}</button>
+                        </div>
+                        <BoxRessources ressources={props.ressources} />
+                    </div>
+                }
+                <div className="div-button-next-q">
+                    <button class="btn-21" onClick={newQuestion}><span>{lang === 'fr' ? resultQuestElt4.FR : resultQuestElt4.EN}</span></button>
                 </div>
             </div >
         </>

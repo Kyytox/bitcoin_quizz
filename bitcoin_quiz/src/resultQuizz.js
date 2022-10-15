@@ -33,17 +33,19 @@ function ResultQuizz(props) {
                                 bgColor="#FFFFFF"
                                 fgcolor="#000000"
                                 level="L"
-                                size="300"
+                                size="250"
                             />
                         </div>
                         <div className='qr-code-infos'>
                             {props.linkLNURL ? (
                                 <>
+                                    <button class="btn-3" onClick={copyLNURL}><span>Copy LNUrl</span></button>
                                     <h4>{lang === 'fr' ? resultQuizElt1.FR : resultQuizElt1.EN}: {props.amountLNURL} satoshis</h4>
-                                    <p>Id: {props.idLNURL}</p>
-                                    <p>{lang === 'fr' ? resultQuizElt2.FR : resultQuizElt2.EN}: {props.titleLNURL}</p>
+                                    <p className='p-label'>Id:</p>
+                                    <p>{props.idLNURL}</p>
+                                    <p className='p-label'>{lang === 'fr' ? resultQuizElt2.FR : resultQuizElt2.EN}:</p>
+                                    <p>{props.titleLNURL}</p>
                                     <p id='p-LNURL'>LNURL: {props.linkLNURL}</p>
-                                    <button onClick={copyLNURL}>Copy LNUrl</button>
                                 </>
                             ) : (
                                 <div className='qr-code-infos'>
@@ -51,31 +53,32 @@ function ResultQuizz(props) {
                                 </div>
                             )}
                             <hr></hr>
-                            <p>{lang === 'fr' ? resultQuizElt3.FR : resultQuizElt3.EN}</p>
+
+                            <NavLink to="/">
+                                <button class="btn-3"><span>{lang === 'fr' ? resultQuizElt4.FR : resultQuizElt4.EN}</span></button>
+                            </NavLink>
+
+                            <p className='p-wallet'>{lang === 'fr' ? resultQuizElt3.FR : resultQuizElt3.EN}</p>
                             <a className='qr-code-infos-link' href="https://www.walletofsatoshi.com/" target="_blank" rel="noopener noreferrer">Wallet Of Satoshi</a>
                             <a className='qr-code-infos-link' href="https://bluewallet.io/" target="_blank" rel="noopener noreferrer">Blue Wallet</a>
                             <a className='qr-code-infos-link' href="https://phoenix.acinq.co/" target="_blank" rel="noopener noreferrer">Phoenix</a>
-
-                            <NavLink to="/">
-                                <button className='btn-claim-satoshis'>{lang === 'fr' ? resultQuizElt4.FR : resultQuizElt4.EN}</button>
-                            </NavLink>
                         </div>
                     </div>
                 ) : (
                     <div className='result-quizz-score'>
-                        <h4>{lang === 'fr' ? resultQuizElt5.FR : resultQuizElt5.EN} :</h4>
-                        <p>{props.counterScore} {lang === 'fr' ? resultQuizElt6.FR : resultQuizElt6.EN}</p>
-                        <hr></hr>
                         <h4>{lang === 'fr' ? resultQuizElt7.FR : resultQuizElt7.EN} :</h4>
                         <p>{props.satoshis} Satoshis</p>
-
+                        <hr></hr>
+                        <h4>{lang === 'fr' ? resultQuizElt5.FR : resultQuizElt5.EN} :</h4>
+                        <p>{props.counterScore} {lang === 'fr' ? resultQuizElt6.FR : resultQuizElt6.EN}</p>
+                        
                         {props.satoshis === 0 ? (
                             <NavLink to="/">
-                                <button className='btn-claim-satoshis'>{lang === 'fr' ? resultQuizElt4.FR : resultQuizElt4.EN}</button>
+                                <button class="btn-3"><span>{lang === 'fr' ? resultQuizElt4.FR : resultQuizElt4.EN}</span></button>
                             </NavLink>
                         ) : (
                             <>
-                                <button id='btn-claim' className='btn-claim-satoshis' onClick={fctDisplayClaim}>Claim</button>
+                                <button id='btn-claim' className='btn-3' onClick={fctDisplayClaim}><span>Claim</span></button>
                                 <span id="loader-qr-code" style={{ display: 'none' }}></span>
                             </>
                         )}

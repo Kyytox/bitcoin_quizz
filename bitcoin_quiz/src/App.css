@@ -1,10 +1,10 @@
 :root {
-  --box-shadow: 2px 3px 13px 0px #000000;
+  --box-shadow: 1px 1px 6px 0px #000000;
   --box-shadow-hover: 2px 3px 13px 0px #c9c6c6;
-  --background-1: rgb(201 201 201);
+  --background-1: rgb(100 100 100);
   --background-btn-hover: rgb(43, 43, 43);
   --colo-btn-question: rgb(201 201 201);
-  --color-text: black;
+  --color-text: rgb(255, 255, 255);
   --color-text-hover: white;
 }
 
@@ -30,6 +30,10 @@
 
 div#root {
   /* height: 95vh; */
+}
+
+button{
+  font-family: 'Slater Industrial Regular';
 }
 
 .App {
@@ -61,25 +65,20 @@ div#root {
 }
 
 .div-head-flag-link img {
+  cursor: pointer;
   width: 23px;
   height: 20px;
   margin-right: 10px;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-}
-
-
-.App-header a {
-  /* margin-right: 75px; */
-  /* margin-left: 10px; */
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
 }
 
 .App-header a i {
   font-size: 20px;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 .div-envoi-satoshis {
@@ -94,24 +93,6 @@ div#root {
 
 .App-main-box-wallet-details span {}
 
-.App-main-box-wallet-details button {
-  background: var(--background-1);
-  margin-left: 20%;
-  margin-top: 7px;
-  text-align: center;
-  width: fit-content;
-  padding: 5px 10px;
-  border: 0;
-  font-size: 14px;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  box-shadow: var(--box-shadow);
-  color: var(--color-text);
-  font-family: 'Slater Industrial Regular';
-}
 
 form label {
   font-size: 13px;
@@ -214,6 +195,7 @@ form label {
   text-indent: -9999em;
   animation: mulShdSpin 1.3s infinite linear;
   transform: translateZ(0);
+  -webkit-animation: mulShdSpin 1.3s infinite linear;
 }
 
 @keyframes mulShdSpin {
@@ -287,15 +269,18 @@ form label {
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
-  min-height: 81.2vh;
+  padding-bottom: 5%;
 }
 
 .App-main h2 {
-  font-size: 22px;
+  font-size: 20px;
   padding: 10px;
+  margin-bottom: 5px;
 }
 
-
+.App-main h2:nth-child(2) {
+  margin-top: 0;
+}
 
 
 .App-main-rules {
@@ -349,10 +334,6 @@ form label {
   width: 70%;
 }
 
-.warning-brave {
-  display: none;
-}
-
 .App-main-box-wallet a {
   text-decoration: none;
   color: white;
@@ -401,6 +382,7 @@ form label {
 
 .App-main-rules i {
   margin-right: 10px;
+  width: 20%;
 }
 
 .App-main-rules h4 {
@@ -490,18 +472,15 @@ form label {
 .btn-8 {
   -webkit-tap-highlight-color: transparent;
   -webkit-appearance: button;
-  background-color: #000;
+  background-color: rgb(255, 255, 255);
   background-image: none;
-  color: #fff;
+  color: white;
   cursor: pointer;
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
-    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-  font-size: 100%;
+  font-size: 20px;
   font-weight: 900;
   line-height: 1.5;
   margin: 0;
-  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  -webkit-mask-image: -webkit-radial-gradient(rgb(0, 0, 0), rgb(255, 255, 255));
   padding: 0;
   text-transform: uppercase;
 }
@@ -519,11 +498,15 @@ form label {
   display: none;
 }
 .btn-8 {
-  border-radius: 99rem;
-  border-width: 2px;
+  border-radius: 3px;
+  border-width: 1px;
   overflow: hidden;
   padding: 0.8rem 3rem;
   position: relative;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
 }
 .btn-8 span {
   mix-blend-mode: difference;
@@ -531,13 +514,8 @@ form label {
 .btn-8:after,
 .btn-8:before {
   --tilt: 1.2rem;
-  background: #fff;
-  -webkit-clip-path: polygon(
-    0 0,
-    calc(100% - var(--tilt)) 0,
-    100% 100%,
-    0 100%
-  );
+  background: rgb(27, 27, 27);
+  -webkit-clip-path: polygon(    0 0,    calc(100% - var(--tilt)) 0,    100% 100%,    0 100%  );
   clip-path: polygon(0 0, calc(100% - var(--tilt)) 0, 100% 100%, 0 100%);
   content: "";
   display: block;
@@ -546,8 +524,12 @@ form label {
   position: absolute;
   top: 0;
   transform: translateX(var(--progress, 0));
-  transition: transform 0.2s ease;
+  transition: transform 0.5s ease;
   width: calc(100% + var(--tilt));
+  -webkit-transition: transform 0.5s ease;
+  -moz-transition: transform 0.5s ease;
+  -ms-transition: transform 0.5s ease;
+  -o-transition: transform 0.5s ease;
 }
 .btn-8:after {
   left: 100%;
@@ -563,58 +545,227 @@ form label {
 
 
 
-/* Tablette and phone */
-/*
-@media (max-width: 1024px) {
-  .App-main-rules {
-    flex-direction: column;
+
+
+.btn-5,
+.btn-5 *,
+.btn-5 :after,
+.btn-5 :before,
+.btn-5:after,
+.btn-5:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-5 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: rgb(255, 255, 255);
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  /* line-height: 1.5; */
+  margin: 0;
+  margin-left: 10px;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn-5:disabled {
+  cursor: default;
+}
+.btn-5:-moz-focusring {
+  outline: auto;
+}
+.btn-5 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-5 [hidden] {
+  display: none;
+}
+.btn-5 {
+  border-radius: 3px;
+  border-width: 1px;
+  overflow: hidden;
+  padding: 0.3rem 0.5rem;
+  position: relative;
+}
+.btn-5 span {
+  mix-blend-mode: difference;
+}
+.btn-5:before {
+  --tilt: 1.2rem;
+  background: rgb(27, 27, 27);
+  -webkit-clip-path: polygon(    0 0,    calc(100% - var(--tilt)) 0,    100% 50%,    calc(100% - var(--tilt)) 100%,    0 100%  );
+  clip-path: polygon(    0 0,    calc(100% - var(--tilt)) 0,    100% 50%,    calc(100% - var(--tilt)) 100%,    0 100%  );
+  content: "";
+  display: block;
+  height: 100%;
+  left: calc(-100% - var(--tilt));
+  position: absolute;
+  top: 0;
+  transform: translateX(var(--progress, 0));
+  transition: transform 0.5s ease;
+  width: calc(100% + var(--tilt));
+  -webkit-transition: transform 0.5s ease;
+  -moz-transition: transform 0.5s ease;
+  -ms-transition: transform 0.5s ease;
+  -o-transition: transform 0.5s ease;
+}
+.btn-5:hover:before {
+  --progress: 100%;
+}
+
+
+
+@media(min-width: 1000px){
+
+  .warning-brave {
+    display: block;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .warning-brave i::before{
+    font-size: 16px;
+  }
+
+  .App-header {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
     align-items: center;
-    width: 80%;
-    margin-top: 40px;
-    margin-bottom: 60px;
+    justify-content: space-between;
   }
 
-  .main-rules-list,
-  .main-rules-questions,
-  .main-rules-satoshis {
-    width: 100%;
-  }
-
-
-  .App-main-div-create-session .button-play {
-    width: 66%;
-  }
-
-  .App-main-div-create-session {
-    width: 100%;
-  }
-
-  .div-envoi-satoshis {
-    width: 95%;
-  }
-
-  .div-envoi-satoshis p {
+  .App-header h1 {
+    margin-top: 5px;
+    margin-left: 20px;
     margin-bottom: 10px;
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .app-header-div-head {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    width: 50%;
+  }
+
+  .App-main-box-wallet-details {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
   }
 
   form {
     display: flex;
-    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-direction: row;
     align-items: center;
   }
 
-  .form-input-amount {
-    width: 30%;
+  form label {
+    font-size: 13px;
+    width: 64%;
   }
 
   .from-btn-input {
-    margin-top: 15px;
-    width: 50%;
+    margin-left: 0;
+    margin-top: 0;
   }
 
-  .qr-code-envoi button:hover {
-    height: 50px;
+  .form-input-amount {
+    border-radius: 4px;
+    margin-left: 3px;
+    margin-right: 0;
+    text-align: center;
+    width: 28%;
+    height: 17px;
+  }
+
+
+  .qr-code-envoi {
+    display: flex;
+    position: absolute;
+    top: 0;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+
+  .qr-code-envoi button {
+    background: var(--background-1);
+    margin-left: 0%;
+    margin-top: 21px;
+  }
+
+  .App-main {
+    align-items: center;
+    padding-bottom: 0;
+    margin-top: 8%;
+  }
+
+  .App-main-rules {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin-top: 70px;
+    margin-bottom: 60px;
+    width: 75%;
+  }
+
+  .main-rules-list, .main-rules-questions, .main-rules-satoshis {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 28%;
+    align-items: center;
   }
 }
 
-*/
+
+
+@media(min-width: 1600px){
+  .div-head-flag-link img {
+    cursor: pointer;
+    width: 30px;
+    height: 27px;
+    margin-right: 10px;
+  }
+  
+  .App-header a i {
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+  }
+
+  .App-main {
+    align-items: center;
+    padding-bottom: 0;
+    margin-top: 5%;
+  }
+
+  .App-main-rules {
+    margin-top: 5%;
+    margin-bottom: 7%;
+    justify-content: space-between;
+  }
+
+  .app-header-div-head {
+    width: 56%;
+  }
+
+  .main-rules-list, .main-rules-questions, .main-rules-satoshis {
+    width: 40%;
+  }
+  
+}

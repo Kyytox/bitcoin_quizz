@@ -43,6 +43,10 @@ export const mainRulesElt11 = {
     FR: "Penser a desactiver le shield Brave pour gagner des sats",
     EN: "Remember to deactivate the Brave shield to win sats",
 }
+export const mainRulesElt12 = {
+    FR: "Recevez des satoshis avec Lightning Network",
+    EN: "Receive satoshis with Lightning Network",
+}
 
 
 // RESULT QUESTION 
@@ -122,12 +126,12 @@ export const resultQuizElt5 = {
     EN: "Your score",
 }
 export const resultQuizElt6 = {
-    FR: "bonnes reponses",
+    FR: "Bonnes reponses",
     EN: "Right answers",
 }
 export const resultQuizElt7 = {
-    FR: "Vous remportez",
-    EN: "You win",
+    FR: "Récompense",
+    EN: "Reward",
 }
 export const resultQuizElt8 = {
     FR: "Verifie bien que tout tes adblocks soient desactives pour generer le QRcode",

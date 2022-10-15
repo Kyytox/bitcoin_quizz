@@ -8,16 +8,6 @@ import QRCode from 'react-qr-code';
 import { mainRulesElt5, mainRulesElt6 } from './data';
 
 
-
-
-// blue = linear-gradient(90deg, rgb(8 4 143) 13%, rgb(34 93 187) 56%, rgb(0, 186, 201) 100%);
-// green = linear-gradient(90deg, rgb(2 110 46) 13%, rgb(30 149 52) 56%, rgb(48 205 39) 100%);
-// pink = linear-gradient(90deg, rgb(79 4 122) 13%, rgb(164 0 175) 56%, rgb(255 29 174) 100%);
-// black = linear-gradient(90deg, rgba(34,34,34,1) 18%, rgba(115,115,115,1) 56%, rgba(154,154,154,1) 100%);
-// red = linear-gradient(90deg, rgba(158, 0, 0, 1) 13%, rgba(170, 42, 0, 1) 47%, rgba(201, 176, 0, 1) 100%)
-
-
-
 function Header() {
 
     const [request, setRequest] = useState("");
@@ -48,7 +38,11 @@ function Header() {
             let repDetailsAPI = await fetch(detailsAPI),
                 bodyDetailsAPI = await repDetailsAPI.json();
             const balance = JSON.parse(bodyDetailsAPI)['balance'].toString()
-            setWalletBalance(balance.slice(0, -3))
+            if (balance.length < 4) {
+                setWalletBalance(0)    
+            }else {
+                setWalletBalance(balance.slice(0, -3))
+            }
         }
     };
 
@@ -108,13 +102,12 @@ function Header() {
                         <>
                             {!displayForm ? (
                                 <div className='App-main-box-wallet-details'>
-                                    {/* <p>{lang === 'fr' ? mainRulesElt5.FR : mainRulesElt5.EN}</p> */}
                                     <span>{lang === 'fr' ? mainRulesElt6.FR : mainRulesElt6.EN} : {walletBalance}</span>
-                                    <button onClick={changeDisplayForm}>{lang === 'fr' ? mainRulesElt5.FR : mainRulesElt5.EN}</button>
+                                    <button class="btn-5" onClick={changeDisplayForm}><span>{lang === 'fr' ? mainRulesElt5.FR : mainRulesElt5.EN}</span></button>
                                 </div>
                             ) : (
                                 <>
-                                    {/* <form onSubmit={handleSubmit} id='form-envoi'>
+                                    {<form onSubmit={handleSubmit} id='form-envoi'>
                                         <label> Entrer un montant:
                                             <input
                                                 className='form-input-amount'
@@ -123,7 +116,7 @@ function Header() {
                                                 onChange={(e) => setAmount(e.target.value)} />
                                         </label>
                                         <input className='from-btn-input' type="submit"/>
-                                    </form> */}
+                                    </form>}
                                     <span id="loader-qr-code" style={{ display: 'none' }}></span>
                                 </>
                             )}

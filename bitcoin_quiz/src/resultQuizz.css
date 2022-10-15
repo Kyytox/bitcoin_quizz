@@ -1,12 +1,16 @@
 .box-result-quizz {
-    width: 24%;
+    width: 70%;
+    margin-top: 10%;
     padding: 35px;
-    border-radius: 15px;
+    border-radius: 3px;
     box-shadow: var(--box-shadow);
-    background: rgba(255, 255, 255, 0.5);
-    -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);
-    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: rgba(255,255,255,0.15);
+    -webkit-backdrop-filter: blur(11px);
+    backdrop-filter: blur(11px);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 .result-quizz-score {
@@ -17,16 +21,18 @@
 
 
 .result-quizz-score h4 {
-    color: var(--color-text);
-    font-size: 20px;
+    color: white;
+    font-size: 14px;
+    margin-bottom: 3px;
 }
 
 .result-quizz-score p {
-    color: var(--color-text);
+    color: white;
 }
 
 hr {
     width: 80%;
+    border-bottom: 0;
 }
 
 
@@ -57,17 +63,36 @@ hr {
 .qr-code-infos {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+}
+
+
+.qr-code-infos h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 
 .qr-code-infos p {
-    color: black;
+    text-align: left;
+    color: white;
+    font-size: 16px;
+    margin-top: 0;
+    width: 100%;
+}
+
+.qr-code-infos p.p-label {
+    text-align: left;
+    margin-bottom: 0;
+    margin-top: 10px;
+    font-size: 14px;
 }
 
 .qr-code-infos a {
     text-align: center;
+    margin-bottom: 25px;
     width: 100%;
+    color: white;
 }
 
 a.qr-code-infos-link {
@@ -76,49 +101,108 @@ a.qr-code-infos-link {
 }
 
 
+.qr-code-infos p.p-wallet {
+    font-size: 15px;
+}
+
 .result-quizz-score a {
     text-align: center;
     width: 100%;
 }
 
-.result-quizz-score button,
+
+
+.btn-3,
+.btn-3 *,
+.btn-3 :after,
+.btn-3 :before,
+.btn-3:after,
+.btn-3:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-3 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: rgb(255, 255, 255);
+  background-image: none;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  margin-top: 15%;
+  margin-bottom: 5%;
+  -webkit-mask-image: -webkit-radial-gradient(rgb(0, 0, 0), rgb(255, 255, 255));
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn-3:disabled {
+  cursor: default;
+}
+.btn-3:-moz-focusring {
+  outline: auto;
+}
+.btn-3 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-3 [hidden] {
+  display: none;
+}
+.btn-3 {
+  border-radius: 3px;
+  border-width: 1px;
+  overflow: hidden;
+  padding: 0.8rem 1.5rem;
+  position: relative;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+.btn-3 span {
+  mix-blend-mode: difference;
+}
+.btn-3:before {
+  background: rgb(27, 27, 27);
+  content: "";
+  inset: 0;
+  position: absolute;
+  transform: translateY(var(--progress, -100%));
+  transition: transform 0.5s ease;
+  -webkit-transition: transform 0.5s ease;
+  -moz-transition: transform 0.5s ease;
+  -ms-transition: transform 0.5s ease;
+  -o-transition: transform 0.5s ease;
+}
+.btn-3:hover:before {
+  --progress: 0;
+}
+
+
+
 .qr-code-infos button {
-    background: var(--colo-btn-question);
-    width: 42%;
-    height: 55px;
     margin-top: 10px;
-    margin-bottom: 10px;
-    border: 0;
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
-    box-shadow: var(--box-shadow);
-    color: var(--color-text);
-    font-size: 18px;
-    font-family: 'Slater Industrial Regular';
-}
-
-.result-quizz-score button:hover,
-.qr-code-infos button:hover {
-    background: var(--background-btn-hover);
-    box-shadow: var(--box-shadow-hover);
-    color: var(--color-text-hover);
+    margin-bottom: 5px; 
 }
 
 
 
-/* Tablette and phone */
-@media (max-width: 1024px) {
 
+@media(min-width: 1000px){
     .box-result-quizz {
-        width: 70%;
-        margin-top: 10%;
+        width: 35%;
+        margin-top: 4%;
     }
+}
 
 
-    .btn-claim-satoshis {
-        width: 70%;
+
+@media(min-width: 1600px){
+    .box-result-quizz {
+        width: 30%;
+        margin-top: 3%;
     }
 }
